@@ -58,6 +58,10 @@ tr.hidden{display:none}
 .card-opts span{display:inline-block;background:#0f3460;border:1px solid #333;border-radius:10px;padding:2px 7px;font-size:.66rem;color:#cbd2e4}
 .card-opts span.o3p{background:#ff6b6b;color:#fff;border-color:#ff6b6b;font-weight:bold}
 .card-opts span.oaf{background:#e94560;color:#fff;border-color:#e94560}
+.cast-menu{position:fixed;display:none;z-index:1000;min-width:120px;background:#101832;border:1px solid #e94560;border-radius:8px;padding:6px;box-shadow:0 16px 36px rgba(0,0,0,.42)}
+.cast-menu.open{display:block}
+.cast-menu button{width:100%;border:0;border-radius:6px;background:#e94560;color:#fff;font-weight:bold;padding:9px 12px;cursor:pointer}
+.cast-menu button:hover{background:#ff5b74}
 body.card-mode .table-wrap{display:none}
 body.card-mode .card-list{display:block}
 @media (max-width: 720px){
@@ -123,7 +127,7 @@ body.card-mode .card-list{display:block}
   <th>#</th><th>名前</th><th>60分</th><th>90分</th><th>120分</th><th>可能オプション</th>
 </tr></thead>
 <tbody id="tbody">
-<tr data-opts="イラマチオ,オナニー鑑賞,コスプレ,ノーパン,ノーブラ,バイブ,パンスト,ローター,写メ撮影,動画撮影,即尺,聖水,電マ" data-name="初代LV・咲蘭/さら"><td>1</td><td>初代LV・咲蘭/さら</td><td>28,200円</td><td>44,500円</td><td>59,700円</td><td class="opts"><span>イラマチオ</span><span>オナニー鑑賞</span><span>コスプレ</span><span>ノーパン</span><span>ノーブラ</span><span>バイブ</span><span>パンスト</span><span>ローター</span><span>写メ撮影</span><span>動画撮影</span><span>即尺</span><span>聖水</span><span>電マ</span></td></tr>
+<tr data-opts="イラマチオ,オナニー鑑賞,コスプレ,ノーパン,ノーブラ,バイブ,パンスト,ローター,写メ撮影,動画撮影,即尺,聖水,電マ" data-name="初代LV・咲蘭/さらん"><td>1</td><td>初代LV・咲蘭/さらん</td><td>28,200円</td><td>44,500円</td><td>59,700円</td><td class="opts"><span>イラマチオ</span><span>オナニー鑑賞</span><span>コスプレ</span><span>ノーパン</span><span>ノーブラ</span><span>バイブ</span><span>パンスト</span><span>ローター</span><span>写メ撮影</span><span>動画撮影</span><span>即尺</span><span>聖水</span><span>電マ</span></td></tr>
 <tr data-opts="オナニー鑑賞,コスプレ,バイブ,パンスト,ローター,電マ" data-name="Ria/りあ"><td>2</td><td>Ria/りあ</td><td>28,200円</td><td>44,500円</td><td>59,700円</td><td class="opts"><span>オナニー鑑賞</span><span>コスプレ</span><span>バイブ</span><span>パンスト</span><span>ローター</span><span>電マ</span></td></tr>
 <tr data-opts="アナル舐め,オナニー鑑賞,コスプレ,ノーパン,ノーブラ,バイブ,パンスト,パンティー,ローター,即尺,聖水,電マ" data-name="王妃瑠璃/おうひるり"><td>3</td><td>王妃瑠璃/おうひるり</td><td>29,300円</td><td>46,100円</td><td>61,900円</td><td class="opts"><span>アナル舐め</span><span>オナニー鑑賞</span><span>コスプレ</span><span>ノーパン</span><span>ノーブラ</span><span>バイブ</span><span>パンスト</span><span>パンティー</span><span>ローター</span><span>即尺</span><span>聖水</span><span>電マ</span></td></tr>
 <tr data-opts="オナニー鑑賞,コスプレ,ノーパン,ノーブラ,バイブ,パンスト,パンティー,ローター,聖水,電マ,顔射" data-name="まお"><td>4</td><td>まお</td><td>35,000円</td><td>53,000円</td><td>72,000円</td><td class="opts"><span>オナニー鑑賞</span><span>コスプレ</span><span>ノーパン</span><span>ノーブラ</span><span>バイブ</span><span>パンスト</span><span>パンティー</span><span>ローター</span><span>聖水</span><span>電マ</span><span>顔射</span></td></tr>
@@ -360,12 +364,23 @@ body.card-mode .card-list{display:block}
 <tr data-opts="アナル舐め,オナニー鑑賞,コスプレ,ノーパン,ノーブラ,バイブ,パンスト,パンティー,ローター,写メ撮影,動画撮影,即尺,聖水,電マ" data-name="いお"><td>235</td><td>いお</td><td><span class="na">-</span></td><td><span class="na">-</span></td><td><span class="na">-</span></td><td class="opts"><span>アナル舐め</span><span>オナニー鑑賞</span><span>コスプレ</span><span>ノーパン</span><span>ノーブラ</span><span>バイブ</span><span>パンスト</span><span>パンティー</span><span>ローター</span><span>写メ撮影</span><span>動画撮影</span><span>即尺</span><span>聖水</span><span>電マ</span></td></tr>
 </tbody></table></div>
 <div class="card-list" id="cardList" aria-live="polite"></div>
+<div class="cast-menu" id="castMenu" role="menu">
+  <button type="button" id="deleteCastBtn">削除</button>
+</div>
 
 <script>
 let activeFilters = new Set();
+let selectedCastRow = null;
+
+function assignCastIds() {
+  document.querySelectorAll('#tbody tr').forEach((row, index) => {
+    if (!row.dataset.castId) row.dataset.castId = `cast-${index + 1}`;
+  });
+}
 
 function initCards() {
   const cardList = document.getElementById('cardList');
+  assignCastIds();
   const rows = document.querySelectorAll('#tbody tr');
   cardList.innerHTML = '';
 
@@ -373,6 +388,7 @@ function initCards() {
     const cells = row.children;
     const card = document.createElement('article');
     card.className = 'girl-card';
+    card.dataset.castId = row.dataset.castId;
     card.dataset.name = row.dataset.name || '';
     card.dataset.opts = row.dataset.opts || '';
     if (row.classList.contains('row3p')) card.classList.add('row3p');
@@ -392,6 +408,17 @@ function initCards() {
     `;
     cardList.appendChild(card);
   });
+}
+
+function totalCastCount() {
+  return document.querySelectorAll('#tbody tr').length;
+}
+
+function updateStats(count) {
+  const total = totalCastCount();
+  document.getElementById('stats').innerHTML = `表示中: <span>${count}</span> / ${total}名`;
+  const subtitle = document.querySelector('.subtitle');
+  subtitle.textContent = `全${total}名 ｜ 店長コメント欄記載の料金（税込）+ 可能オプション`;
 }
 
 function setView(view) {
@@ -438,13 +465,57 @@ function applyFilters() {
     if (cards[index]) cards[index].classList.toggle('hidden', !show);
     if (show) count++;
   });
-  document.querySelector('#stats span').textContent = count;
+  updateStats(count);
 }
 
 function resetAll() {
   activeFilters.clear();
   document.querySelectorAll('.fbtn').forEach(b => b.classList.remove('active'));
   document.getElementById('nameSearch').value = '';
+  applyFilters();
+}
+
+function nameFromRow(row) {
+  return row ? row.children[1].textContent.trim() : '';
+}
+
+function rowForMenuTarget(target) {
+  const nameCell = target.closest('#tbody td:nth-child(2)');
+  if (nameCell) return nameCell.closest('tr');
+
+  const cardName = target.closest('.card-name');
+  if (cardName) {
+    const castId = cardName.closest('.girl-card').dataset.castId;
+    return document.querySelector(`#tbody tr[data-cast-id="${castId}"]`);
+  }
+
+  return null;
+}
+
+function hideCastMenu() {
+  document.getElementById('castMenu').classList.remove('open');
+  selectedCastRow = null;
+}
+
+function showCastMenu(event, row) {
+  selectedCastRow = row;
+  const menu = document.getElementById('castMenu');
+  menu.style.left = `${Math.min(event.clientX, window.innerWidth - 132)}px`;
+  menu.style.top = `${Math.min(event.clientY, window.innerHeight - 52)}px`;
+  menu.classList.add('open');
+}
+
+function deleteSelectedCast() {
+  if (!selectedCastRow) return;
+  const name = nameFromRow(selectedCastRow);
+  if (!confirm(`本当に削除しますか？\n${name}`)) {
+    hideCastMenu();
+    return;
+  }
+
+  selectedCastRow.remove();
+  hideCastMenu();
+  initCards();
   applyFilters();
 }
 
@@ -457,6 +528,24 @@ document.addEventListener('DOMContentLoaded', () => {
   const defaultView = window.matchMedia('(max-width: 720px)').matches ? 'card' : 'table';
   setView(savedView || defaultView);
   applyFilters();
+
+  document.addEventListener('contextmenu', event => {
+    const row = rowForMenuTarget(event.target);
+    if (!row) {
+      hideCastMenu();
+      return;
+    }
+    event.preventDefault();
+    showCastMenu(event, row);
+  });
+
+  document.getElementById('deleteCastBtn').addEventListener('click', deleteSelectedCast);
+  document.addEventListener('click', event => {
+    if (!event.target.closest('#castMenu')) hideCastMenu();
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') hideCastMenu();
+  });
 });
 </script>
 </body></html>
