@@ -124,3 +124,20 @@ test('manual editor updates profile links and adds a new cast locally', async ({
     'https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-test/'
   );
 });
+
+test('manual editor works even when CSS.escape is unavailable', async ({ page }) => {
+  await page.addInitScript(() => {
+    if (window.CSS) window.CSS.escape = undefined;
+  });
+  await page.goto('/');
+
+  await page.locator('#castSelect').selectOption({ label: 'Ria/りあ' });
+  await expect(page.locator('#editName')).toHaveValue('Ria/りあ');
+
+  await page.locator('#editProfileUrl').fill('https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-no-css-escape/');
+  await page.getByRole('button', { name: '保存' }).click();
+  await expect(page.locator('#tbody tr[data-name="Ria/りあ"] td:nth-child(2) a')).toHaveAttribute(
+    'href',
+    'https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-no-css-escape/'
+  );
+});

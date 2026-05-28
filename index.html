@@ -606,6 +606,10 @@ function createCastRow(cast) {
   return row;
 }
 
+function rowByCastId(id) {
+  return [...document.querySelectorAll('#tbody tr')].find(row => row.dataset.castId === id) || null;
+}
+
 function renumberRows() {
   document.querySelectorAll('#tbody tr').forEach((row, index) => {
     row.children[0].textContent = String(index + 1);
@@ -615,14 +619,14 @@ function renumberRows() {
 function applyManualState() {
   assignCastIds();
   (manualState.deleted || []).forEach(id => {
-    document.querySelector(`#tbody tr[data-cast-id="${CSS.escape(id)}"]`)?.remove();
+    rowByCastId(id)?.remove();
   });
   Object.entries(manualState.rows || {}).forEach(([id, cast]) => {
-    const row = document.querySelector(`#tbody tr[data-cast-id="${CSS.escape(id)}"]`);
+    const row = rowByCastId(id);
     if (row) applyCastToRow(row, { ...cast, id });
   });
   (manualState.added || []).forEach(cast => {
-    if (!cast.id || document.querySelector(`#tbody tr[data-cast-id="${CSS.escape(cast.id)}"]`)) return;
+    if (!cast.id || rowByCastId(cast.id)) return;
     document.getElementById('tbody').appendChild(createCastRow(cast));
   });
   renumberRows();
@@ -676,7 +680,7 @@ function startNewCast() {
 function selectedEditorRow() {
   const id = document.getElementById('castSelect').value;
   if (!id) return null;
-  return document.querySelector(`#tbody tr[data-cast-id="${CSS.escape(id)}"]`);
+  return rowByCastId(id);
 }
 
 function castFromEditor(id = '') {
@@ -1152,7 +1156,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   document.getElementById('castSelect').addEventListener('change', event => {
-    const row = document.querySelector(`#tbody tr[data-cast-id="${CSS.escape(event.target.value)}"]`);
+    const row = rowByCastId(event.target.value);
     if (row) openEditorForRow(row);
   });
   document.getElementById('unlinkedSelect').addEventListener('change', event => {
