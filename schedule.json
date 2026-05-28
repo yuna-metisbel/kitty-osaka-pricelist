@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-05-28T21:15:15.150Z",
+  "syncedAt": "2026-05-28T23:24:44.186Z",
   "dates": [
     {
       "date": "2026-05-29",
@@ -631,6 +631,14 @@
         "normalizedName": "琴葉/ことは",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-64642364/?of=y2",
         "time": "14:00～03:00"
+      },
+      {
+        "girlId": "65952496",
+        "venryGirlId": "3827959",
+        "name": "もゆ・18歳",
+        "normalizedName": "もゆ",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-65952496/?of=y2",
+        "time": "15:00～00:00"
       },
       {
         "girlId": "65990939",
