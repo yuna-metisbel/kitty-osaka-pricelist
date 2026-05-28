@@ -81,13 +81,31 @@ body.card-mode .card-list{display:block}
 .sync-btn,.action-link{border:0;border-radius:18px;background:#2f8d5b;color:#fff;font-weight:bold;font-size:.76rem;padding:7px 12px;cursor:pointer;text-decoration:none}
 .sync-btn:hover,.action-link:hover{filter:brightness(1.12)}
 .action-link{background:#365fb8}
+.editor-panel{max-width:1200px;margin:0 auto 12px;background:#fff;border:1px solid #d9e1ef;border-radius:8px;padding:12px;box-shadow:0 8px 22px rgba(30,41,59,.06)}
+.editor-panel h3{font-size:.85rem;color:#e94560;margin-bottom:8px}
+.editor-toolbar{display:grid;grid-template-columns:minmax(180px,1fr) auto auto;gap:8px;margin-bottom:10px}
+.editor-panel select,.editor-panel input,.editor-panel textarea{width:100%;border:1px solid #c7d7f0;border-radius:8px;background:#fff;color:#172033;padding:8px;font:inherit;font-size:.8rem}
+.editor-panel textarea{min-height:70px;resize:vertical;grid-column:1/-1}
+.editor-grid{display:grid;grid-template-columns:repeat(4,minmax(120px,1fr));gap:8px}
+.editor-field{display:grid;gap:4px;color:#526074;font-size:.72rem;font-weight:bold}
+.editor-field.wide{grid-column:span 2}
+.editor-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;align-items:center}
+.editor-btn{border:0;border-radius:18px;background:#365fb8;color:#fff;font-weight:bold;font-size:.76rem;padding:8px 13px;cursor:pointer}
+.editor-btn.primary{background:#e94560}
+.editor-btn.danger{background:#a83d4e}
+.editor-btn.ghost{background:#edf4ff;color:#1f3c6d;border:1px solid #c7d7f0}
+.editor-status{color:#1c8756;font-size:.76rem;font-weight:bold}
+.unlinked-box{display:none;margin-top:10px;border-top:1px solid #e4e9f2;padding-top:10px}
+.unlinked-box.open{display:block}
+.unlinked-box p{color:#6f7b90;font-size:.74rem;margin-bottom:6px}
+.unlinked-list{display:flex;flex-wrap:wrap;gap:6px}
 html{font-size:calc(16px * var(--font-scale, 1))}
 body[data-color-level="0"]{background:#fffaf5;color:#172033}
-body[data-color-level="0"] .control-panel,body[data-color-level="0"] .filters,body[data-color-level="0"] .table-wrap,body[data-color-level="0"] .girl-card,body[data-color-level="0"] .view-switch{background:#fffefb;border-color:#eaded2}
+body[data-color-level="0"] .control-panel,body[data-color-level="0"] .filters,body[data-color-level="0"] .editor-panel,body[data-color-level="0"] .table-wrap,body[data-color-level="0"] .girl-card,body[data-color-level="0"] .view-switch{background:#fffefb;border-color:#eaded2}
 body[data-color-level="0"] thead,body[data-color-level="0"] .price-pill,body[data-color-level="0"] .fbtn:not(.active):not(.f3p),body[data-color-level="0"] td.opts span:not(.o3p):not(.oaf):not(.oforeign):not(.oforeignc),body[data-color-level="0"] .card-opts span:not(.o3p):not(.oaf):not(.oforeign):not(.oforeignc){background:#fff6ec;border-color:#ead7c0;color:#5c3b1f}
 body[data-color-level="1"]{background:#f7f8fc;color:#172033}
 body[data-color-level="2"]{background:#fff;color:#111827}
-body[data-color-level="2"] .control-panel,body[data-color-level="2"] .filters,body[data-color-level="2"] .table-wrap,body[data-color-level="2"] .girl-card,body[data-color-level="2"] .view-switch{background:#fff;border-color:#8aa4d6;box-shadow:0 0 0 2px rgba(69,106,180,.08),0 8px 22px rgba(30,41,59,.06)}
+body[data-color-level="2"] .control-panel,body[data-color-level="2"] .filters,body[data-color-level="2"] .editor-panel,body[data-color-level="2"] .table-wrap,body[data-color-level="2"] .girl-card,body[data-color-level="2"] .view-switch{background:#fff;border-color:#8aa4d6;box-shadow:0 0 0 2px rgba(69,106,180,.08),0 8px 22px rgba(30,41,59,.06)}
 body[data-color-level="2"] thead,body[data-color-level="2"] .price-pill,body[data-color-level="2"] .fbtn:not(.active):not(.f3p),body[data-color-level="2"] td.opts span:not(.o3p):not(.oaf):not(.oforeign):not(.oforeignc),body[data-color-level="2"] .card-opts span:not(.o3p):not(.oaf):not(.oforeign):not(.oforeignc){background:#eaf2ff;border-color:#8aa4d6;color:#143466}
 body[data-color-level="2"] h1,body[data-color-level="2"] td:nth-child(2),body[data-color-level="2"] .card-name,body[data-color-level="2"] .control-field b{color:#0f172a}
 body[data-color-level="2"] .fbtn.active,body[data-color-level="2"] .view-btn.active,body[data-color-level="2"] .reset-btn{background:#d91f4b;color:#fff;box-shadow:0 0 0 2px #ffd166 inset}
@@ -99,6 +117,8 @@ body[data-color-level="2"] .schedule-time{color:#0f7a45}
   .control-panel{grid-template-columns:1fr;padding:9px}
   .control-sliders{grid-template-columns:1fr}
   .sync-tools{justify-content:flex-start}
+  .editor-toolbar,.editor-grid{grid-template-columns:1fr}
+  .editor-field.wide{grid-column:span 1}
   .search-box{position:sticky;top:0;z-index:20;background:inherit;padding:4px 0 8px}
   .filters{padding:10px}
   .filter-row{max-height:116px;overflow:auto}
@@ -175,6 +195,48 @@ body[data-color-level="2"] .schedule-time{color:#0f7a45}
   <h3>出勤日で絞り込み</h3>
   <p class="schedule-meta" id="scheduleMeta">出勤情報を読み込み中...</p>
   <div class="filter-row" id="scheduleBtns"></div>
+</div>
+
+<div class="editor-panel" aria-label="キャスト手動編集">
+  <h3>手動編集・新規追加・サイトURL紐付け</h3>
+  <div class="editor-toolbar">
+    <select id="castSelect" aria-label="編集するキャストを選択"></select>
+    <button class="editor-btn ghost" type="button" onclick="startNewCast()">新規追加</button>
+    <button class="editor-btn ghost" type="button" onclick="fillFromSelectedSchedule()">未紐付け候補</button>
+  </div>
+  <div class="editor-grid">
+    <label class="editor-field wide">名前
+      <input id="editName" type="text" placeholder="例: 花子/はなこ">
+    </label>
+    <label class="editor-field wide">サイトURL
+      <input id="editProfileUrl" type="url" placeholder="https://www.cityheaven.net/.../girlid-.../">
+    </label>
+    <label class="editor-field">60分
+      <input id="editPrice60" type="text" placeholder="26,000円">
+    </label>
+    <label class="editor-field">90分
+      <input id="editPrice90" type="text" placeholder="41,200円">
+    </label>
+    <label class="editor-field">120分
+      <input id="editPrice120" type="text" placeholder="55,300円">
+    </label>
+    <label class="editor-field">候補
+      <select id="unlinkedSelect" aria-label="未紐付け候補"></select>
+    </label>
+    <label class="editor-field wide">可能オプション（カンマ区切り）
+      <textarea id="editOpts" placeholder="電マ,ノーパン,外国人⚪︎"></textarea>
+    </label>
+  </div>
+  <div class="editor-actions">
+    <button class="editor-btn primary" type="button" onclick="saveCastEdit()">保存</button>
+    <button class="editor-btn danger" type="button" onclick="deleteEditorCast()">選択を消す</button>
+    <button class="editor-btn ghost" type="button" onclick="resetManualChanges()">手動変更を初期化</button>
+    <span class="editor-status" id="editorStatus"></span>
+  </div>
+  <div class="unlinked-box" id="unlinkedBox">
+    <p>出勤にはあるが一覧に自動一致しない候補です。選ぶと名前とURLだけフォームに入ります。</p>
+    <div class="unlinked-list" id="unlinkedList"></div>
+  </div>
 </div>
 
 <p class="stats" id="stats">表示中: <span>235</span> / 235名</p>
@@ -422,6 +484,7 @@ body[data-color-level="2"] .schedule-time{color:#0f7a45}
 </tbody></table></div>
 <div class="card-list" id="cardList" aria-live="polite"></div>
 <div class="cast-menu" id="castMenu" role="menu">
+  <button type="button" id="editCastBtn">編集</button>
   <button type="button" id="deleteCastBtn">削除</button>
 </div>
 
@@ -433,6 +496,317 @@ let scheduleData = null;
 let scheduleByName = new Map();
 let profileByName = new Map();
 const colorLabels = ['やわらかめ', '標準', 'くっきり'];
+const manualStorageKey = 'kittyOsakaManualCasts';
+let manualState = { rows: {}, added: [], deleted: [] };
+
+function safeText(value) {
+  return (value || '').replace(/[&<>"']/g, char => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;'
+  }[char]));
+}
+
+function normalizeOptionList(value) {
+  if (Array.isArray(value)) return value.map(opt => opt.trim()).filter(Boolean);
+  return (value || '').split(',').map(opt => opt.trim()).filter(Boolean);
+}
+
+function optionClass(option) {
+  if (option === '3P') return 'o3p';
+  if (option === 'AF') return 'oaf';
+  if (option === '外国人⚪︎') return 'oforeign';
+  if (option.startsWith('外国人△')) return 'oforeignc';
+  return '';
+}
+
+function optionSpansHtml(options) {
+  return normalizeOptionList(options).map(option => {
+    const cls = optionClass(option);
+    return `<span${cls ? ` class="${cls}"` : ''}>${safeText(option)}</span>`;
+  }).join('');
+}
+
+function displayPrice(value) {
+  const text = (value || '').trim();
+  return text ? safeText(text) : '<span class="na">-</span>';
+}
+
+function getCellPlainText(cell) {
+  return (cell?.innerText || cell?.textContent || '').replace(/\s+/g, ' ').trim();
+}
+
+function loadManualState() {
+  try {
+    const parsed = JSON.parse(window.localStorage.getItem(manualStorageKey) || '{}');
+    manualState = {
+      rows: parsed.rows || {},
+      added: Array.isArray(parsed.added) ? parsed.added : [],
+      deleted: Array.isArray(parsed.deleted) ? parsed.deleted : []
+    };
+  } catch (e) {
+    manualState = { rows: {}, added: [], deleted: [] };
+  }
+}
+
+function saveManualState() {
+  try {
+    window.localStorage.setItem(manualStorageKey, JSON.stringify(manualState));
+  } catch (e) {}
+}
+
+function castFromRow(row) {
+  const cells = row.children;
+  return {
+    id: row.dataset.castId,
+    name: row.dataset.name || getCellPlainText(cells[1]),
+    profileUrl: row.dataset.profileUrl || cells[1].querySelector('a')?.href || '',
+    price60: getCellPlainText(cells[2]),
+    price90: getCellPlainText(cells[3]),
+    price120: getCellPlainText(cells[4]),
+    opts: row.dataset.opts || ''
+  };
+}
+
+function setNameCell(row, name, profileUrl) {
+  const cell = row.children[1];
+  cell.textContent = '';
+  if (profileUrl) {
+    const link = document.createElement('a');
+    link.href = profileUrl;
+    link.target = '_blank';
+    link.rel = 'noopener';
+    link.textContent = name;
+    cell.appendChild(link);
+  } else {
+    cell.textContent = name;
+  }
+}
+
+function applyCastToRow(row, cast) {
+  const options = normalizeOptionList(cast.opts);
+  row.dataset.name = cast.name || '';
+  row.dataset.opts = options.join(',');
+  row.dataset.profileUrl = cast.profileUrl || '';
+  row.classList.toggle('row3p', options.includes('3P'));
+  setNameCell(row, cast.name || '', cast.profileUrl || '');
+  row.children[2].innerHTML = displayPrice(cast.price60);
+  row.children[3].innerHTML = displayPrice(cast.price90);
+  row.children[4].innerHTML = displayPrice(cast.price120);
+  row.children[5].innerHTML = optionSpansHtml(options);
+}
+
+function createCastRow(cast) {
+  const row = document.createElement('tr');
+  row.dataset.castId = cast.id;
+  row.innerHTML = '<td></td><td></td><td></td><td></td><td></td><td class="opts"></td>';
+  applyCastToRow(row, cast);
+  return row;
+}
+
+function renumberRows() {
+  document.querySelectorAll('#tbody tr').forEach((row, index) => {
+    row.children[0].textContent = String(index + 1);
+  });
+}
+
+function applyManualState() {
+  assignCastIds();
+  (manualState.deleted || []).forEach(id => {
+    document.querySelector(`#tbody tr[data-cast-id="${CSS.escape(id)}"]`)?.remove();
+  });
+  Object.entries(manualState.rows || {}).forEach(([id, cast]) => {
+    const row = document.querySelector(`#tbody tr[data-cast-id="${CSS.escape(id)}"]`);
+    if (row) applyCastToRow(row, { ...cast, id });
+  });
+  (manualState.added || []).forEach(cast => {
+    if (!cast.id || document.querySelector(`#tbody tr[data-cast-id="${CSS.escape(cast.id)}"]`)) return;
+    document.getElementById('tbody').appendChild(createCastRow(cast));
+  });
+  renumberRows();
+}
+
+function populateCastSelect(selectedId = '') {
+  const select = document.getElementById('castSelect');
+  if (!select) return;
+  const rows = [...document.querySelectorAll('#tbody tr')];
+  select.innerHTML = rows.map(row => {
+    const cast = castFromRow(row);
+    return `<option value="${safeText(cast.id)}">${safeText(cast.name)}</option>`;
+  }).join('');
+  if (selectedId && [...select.options].some(option => option.value === selectedId)) {
+    select.value = selectedId;
+  }
+}
+
+function setEditorStatus(message) {
+  const status = document.getElementById('editorStatus');
+  if (!status) return;
+  status.textContent = message;
+  if (message) setTimeout(() => {
+    if (status.textContent === message) status.textContent = '';
+  }, 3000);
+}
+
+function fillEditor(cast = {}) {
+  document.getElementById('editName').value = cast.name || '';
+  document.getElementById('editProfileUrl').value = cast.profileUrl || '';
+  document.getElementById('editPrice60').value = cast.price60 || '';
+  document.getElementById('editPrice90').value = cast.price90 || '';
+  document.getElementById('editPrice120').value = cast.price120 || '';
+  document.getElementById('editOpts').value = normalizeOptionList(cast.opts).join(',');
+}
+
+function openEditorForRow(row) {
+  if (!row) return;
+  populateCastSelect(row.dataset.castId);
+  fillEditor(castFromRow(row));
+  document.getElementById('editName').focus();
+}
+
+function startNewCast() {
+  document.getElementById('castSelect').value = '';
+  fillEditor({ price60: '', price90: '', price120: '', opts: '' });
+  document.getElementById('editName').focus();
+  setEditorStatus('新規追加モード');
+}
+
+function selectedEditorRow() {
+  const id = document.getElementById('castSelect').value;
+  if (!id) return null;
+  return document.querySelector(`#tbody tr[data-cast-id="${CSS.escape(id)}"]`);
+}
+
+function castFromEditor(id = '') {
+  return {
+    id,
+    name: document.getElementById('editName').value.trim(),
+    profileUrl: document.getElementById('editProfileUrl').value.trim(),
+    price60: document.getElementById('editPrice60').value.trim(),
+    price90: document.getElementById('editPrice90').value.trim(),
+    price120: document.getElementById('editPrice120').value.trim(),
+    opts: normalizeOptionList(document.getElementById('editOpts').value).join(',')
+  };
+}
+
+function refreshAfterManualEdit(selectedId = '') {
+  renumberRows();
+  buildScheduleIndexes(scheduleData || {});
+  applyProfileLinks();
+  initCards();
+  renderScheduleFilters();
+  populateCastSelect(selectedId);
+  renderUnlinkedCandidates();
+  applyFilters();
+}
+
+function saveCastEdit() {
+  const selectedId = document.getElementById('castSelect').value;
+  const id = selectedId || `manual-${Date.now()}`;
+  const cast = castFromEditor(id);
+  if (!cast.name) {
+    setEditorStatus('名前を入力してください');
+    return;
+  }
+
+  const row = selectedEditorRow();
+  if (row) {
+    applyCastToRow(row, cast);
+    if (id.startsWith('manual-')) {
+      const index = manualState.added.findIndex(item => item.id === id);
+      if (index >= 0) manualState.added[index] = cast;
+    } else {
+      manualState.rows[id] = cast;
+    }
+  } else {
+    manualState.added.push(cast);
+    document.getElementById('tbody').appendChild(createCastRow(cast));
+  }
+  saveManualState();
+  refreshAfterManualEdit(id);
+  document.getElementById('castSelect').value = id;
+  setEditorStatus('保存しました');
+}
+
+function deleteEditorCast() {
+  const row = selectedEditorRow();
+  if (!row) return;
+  const id = row.dataset.castId;
+  const name = nameFromRow(row);
+  if (!confirm(`本当に削除しますか？\n${name}`)) return;
+  if (id.startsWith('manual-')) {
+    manualState.added = manualState.added.filter(cast => cast.id !== id);
+  } else {
+    manualState.deleted = [...new Set([...(manualState.deleted || []), id])];
+    delete manualState.rows[id];
+  }
+  row.remove();
+  saveManualState();
+  refreshAfterManualEdit();
+  fillEditor();
+  setEditorStatus('削除しました');
+}
+
+function resetManualChanges() {
+  if (!confirm('手動で保存した編集・追加・削除をすべて初期化しますか？')) return;
+  try {
+    window.localStorage.removeItem(manualStorageKey);
+  } catch (e) {}
+  window.location.reload();
+}
+
+function unlinkedScheduleCasts() {
+  if (!scheduleData) return [];
+  const rowNames = new Set([...document.querySelectorAll('#tbody tr')].map(row => normalizeCastName(row.dataset.name)));
+  const byKey = new Map();
+  Object.values(scheduleData.castsByDate || {}).flat().forEach(cast => {
+    const key = cast.normalizedName || normalizeCastName(cast.name);
+    if (!rowNames.has(key) && !byKey.has(key)) byKey.set(key, cast);
+  });
+  return [...byKey.values()];
+}
+
+function renderUnlinkedCandidates() {
+  const select = document.getElementById('unlinkedSelect');
+  const box = document.getElementById('unlinkedBox');
+  const list = document.getElementById('unlinkedList');
+  if (!select || !box || !list) return;
+  const casts = unlinkedScheduleCasts();
+  select.innerHTML = '<option value="">候補を選択</option>' + casts.map((cast, index) => (
+    `<option value="${index}">${safeText(cast.name)}</option>`
+  )).join('');
+  list.innerHTML = casts.slice(0, 16).map((cast, index) => (
+    `<button class="fbtn" type="button" data-unlinked-index="${index}">${safeText(cast.name)}</button>`
+  )).join('');
+  box.classList.toggle('open', casts.length > 0);
+}
+
+function fillFromUnlinkedIndex(index) {
+  const cast = unlinkedScheduleCasts()[Number(index)];
+  if (!cast) return;
+  startNewCast();
+  fillEditor({
+    name: cast.name || '',
+    profileUrl: cast.profileUrl || '',
+    price60: '',
+    price90: '',
+    price120: '',
+    opts: ''
+  });
+  setEditorStatus('候補をフォームに入れました');
+}
+
+function fillFromSelectedSchedule() {
+  const value = document.getElementById('unlinkedSelect').value;
+  if (value === '') {
+    renderUnlinkedCandidates();
+    setEditorStatus('候補を選択してください');
+    return;
+  }
+  fillFromUnlinkedIndex(value);
+}
 
 function setColorLevel(value) {
   const level = String(value);
@@ -592,6 +966,8 @@ async function loadSchedule(isManual = false) {
     applyProfileLinks();
     renderScheduleFilters();
     initCards();
+    populateCastSelect(document.getElementById('castSelect')?.value || '');
+    renderUnlinkedCandidates();
     applyFilters();
   } catch (error) {
     meta.innerHTML = '<span class="schedule-error">出勤情報を読み込めませんでした</span>';
@@ -728,15 +1104,34 @@ function deleteSelectedCast() {
     return;
   }
 
+  const id = selectedCastRow.dataset.castId;
+  if (id?.startsWith('manual-')) {
+    manualState.added = manualState.added.filter(cast => cast.id !== id);
+  } else if (id) {
+    manualState.deleted = [...new Set([...(manualState.deleted || []), id])];
+    delete manualState.rows[id];
+  }
+  saveManualState();
   selectedCastRow.remove();
   hideCastMenu();
-  initCards();
-  applyFilters();
+  refreshAfterManualEdit();
+}
+
+function editSelectedCast() {
+  if (!selectedCastRow) return;
+  const row = selectedCastRow;
+  hideCastMenu();
+  openEditorForRow(row);
+  document.querySelector('.editor-panel')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   loadDisplaySettings();
+  loadManualState();
+  applyManualState();
   initCards();
+  populateCastSelect();
+  openEditorForRow(document.querySelector('#tbody tr'));
   loadSchedule();
   let savedView = '';
   try {
@@ -756,6 +1151,18 @@ document.addEventListener('DOMContentLoaded', () => {
     showCastMenu(event, row);
   });
 
+  document.getElementById('castSelect').addEventListener('change', event => {
+    const row = document.querySelector(`#tbody tr[data-cast-id="${CSS.escape(event.target.value)}"]`);
+    if (row) openEditorForRow(row);
+  });
+  document.getElementById('unlinkedSelect').addEventListener('change', event => {
+    if (event.target.value !== '') fillFromUnlinkedIndex(event.target.value);
+  });
+  document.getElementById('unlinkedList').addEventListener('click', event => {
+    const button = event.target.closest('[data-unlinked-index]');
+    if (button) fillFromUnlinkedIndex(button.dataset.unlinkedIndex);
+  });
+  document.getElementById('editCastBtn').addEventListener('click', editSelectedCast);
   document.getElementById('deleteCastBtn').addEventListener('click', deleteSelectedCast);
   document.addEventListener('click', event => {
     if (!event.target.closest('#castMenu')) hideCastMenu();

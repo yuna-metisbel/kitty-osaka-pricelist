@@ -89,3 +89,38 @@ test('display adjusters update background and text scale', async ({ page }) => {
   await expect(page.locator('html')).toHaveAttribute('style', /--font-scale: 1.15/);
   await expect(page.getByRole('button', { name: '同期する' })).toBeVisible();
 });
+
+test('manual editor updates profile links and adds a new cast locally', async ({ page }) => {
+  await page.goto('/');
+
+  await page.locator('#castSelect').selectOption({ label: '初代LV・咲蘭/さらん' });
+  await page.locator('#editProfileUrl').fill('https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-test/');
+  await page.getByRole('button', { name: '保存' }).click();
+  await expect(page.locator('#tbody tr').first().locator('td').nth(1).locator('a')).toHaveAttribute(
+    'href',
+    'https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-test/'
+  );
+
+  await page.getByRole('button', { name: '新規追加' }).click();
+  await page.locator('#editName').fill('テスト新人/てすと');
+  await page.locator('#editProfileUrl').fill('https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-new/');
+  await page.locator('#editPrice60').fill('30,000円');
+  await page.locator('#editPrice90').fill('45,000円');
+  await page.locator('#editPrice120').fill('60,000円');
+  await page.locator('#editOpts').fill('電マ,外国人⚪︎');
+  await page.getByRole('button', { name: '保存' }).click();
+
+  await expect(page.locator('#tbody tr')).toHaveCount(236);
+  await expect(page.locator('#stats')).toContainText('236 / 236名');
+  await expect(page.locator('#tbody tr[data-name="テスト新人/てすと"] td:nth-child(2) a')).toHaveAttribute(
+    'href',
+    'https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-new/'
+  );
+
+  await page.reload();
+  await expect(page.locator('#tbody tr[data-name="テスト新人/てすと"]')).toHaveCount(1);
+  await expect(page.locator('#tbody tr').first().locator('td').nth(1).locator('a')).toHaveAttribute(
+    'href',
+    'https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-test/'
+  );
+});
