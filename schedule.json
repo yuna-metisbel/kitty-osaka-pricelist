@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-05-28T18:18:37.419Z",
+  "syncedAt": "2026-05-28T21:15:15.150Z",
   "dates": [
     {
       "date": "2026-05-29",
@@ -43,6 +43,14 @@
         "normalizedName": "あむ",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-65385640/?of=y2",
         "time": "01:00～04:00"
+      },
+      {
+        "girlId": "66009628",
+        "venryGirlId": "3766248",
+        "name": "天使/てんし・超逸材",
+        "normalizedName": "天使/てんし",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66009628/?of=y2",
+        "time": "09:00～04:00"
       },
       {
         "girlId": "65952496",
@@ -503,6 +511,22 @@
         "time": "21:00～04:00"
       },
       {
+        "girlId": "59446412",
+        "venryGirlId": "3766462",
+        "name": "真凛/まりん・動画即 即無料",
+        "normalizedName": "真凛/まりん",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-59446412/?of=y2",
+        "time": "21:00～05:00"
+      },
+      {
+        "girlId": "57756990",
+        "venryGirlId": "3623550",
+        "name": "夢香/ゆめか/即尺動画無料",
+        "normalizedName": "夢香/ゆめか",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-57756990/?of=y2",
+        "time": "21:00～05:00"
+      },
+      {
         "girlId": "65502154",
         "venryGirlId": "2985766",
         "name": "るみ・動画即 即無料",
@@ -695,6 +719,14 @@
         "normalizedName": "心花/ときめき",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-62784338/?of=y2",
         "time": "20:00～05:00"
+      },
+      {
+        "girlId": "59446412",
+        "venryGirlId": "3766462",
+        "name": "真凛/まりん・動画即 即無料",
+        "normalizedName": "真凛/まりん",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-59446412/?of=y2",
+        "time": "21:00～05:00"
       },
       {
         "girlId": "66049971",
