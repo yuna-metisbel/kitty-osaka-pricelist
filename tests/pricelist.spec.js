@@ -1,4 +1,5 @@
 const { test, expect } = require('@playwright/test');
+const schedule = require('../schedule.json');
 
 test('renames the first cast from sara to saran in table and mobile card views', async ({ page }) => {
   await page.goto('/');
@@ -50,4 +51,22 @@ test('filters casts by foreign guest support tags', async ({ page }) => {
   await page.locator('#filterBtns .fbtn').filter({ hasText: '外国人△（日本語可）' }).click();
   await expect(page.locator('#stats')).toContainText('9 / 235名');
   await expect(page.locator('#tbody tr[data-name="王妃瑠璃/おうひるり"]')).not.toHaveClass(/hidden/);
+});
+
+test('loads Heaven schedule, links profiles, and filters by work date', async ({ page }) => {
+  const riaDate = schedule.dates.find(day =>
+    (schedule.castsByDate[day.date] || []).some(cast => cast.girlId === '47844108')
+  );
+
+  await page.goto('/');
+  await expect(page.locator('#scheduleMeta')).toContainText('ヘブン出勤同期');
+  await expect(page.locator('#tbody tr[data-name="Ria/りあ"] td:nth-child(2) a')).toHaveAttribute(
+    'href',
+    /girlid-47844108/
+  );
+
+  await page.locator('#scheduleBtns .fbtn').filter({ hasText: riaDate.label }).click();
+  await expect(page.locator('#stats')).not.toContainText('235 / 235名');
+  await expect(page.locator('#tbody tr[data-name="Ria/りあ"]')).not.toHaveClass(/hidden/);
+  await expect(page.locator('#tbody tr[data-name="Ria/りあ"] .schedule-time')).toContainText('～');
 });

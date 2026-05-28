@@ -15,6 +15,9 @@ h1{text-align:center;margin-bottom:4px;font-size:1.4rem;color:#fff}
 .filters{max-width:1200px;margin:0 auto 12px;background:#16213e;border-radius:8px;padding:12px}
 .filters h3{font-size:.85rem;color:#e94560;margin-bottom:8px}
 .filter-row{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+.schedule-meta{font-size:.72rem;color:#7f8ba8;margin:-2px 0 8px}
+.schedule-time{display:inline-block;margin-left:6px;color:#51d18a;font-size:.7rem;font-weight:normal}
+.schedule-error{color:#ff9b9b}
 .fbtn{padding:4px 10px;border:1px solid #444;border-radius:16px;font-size:.75rem;cursor:pointer;background:#0f3460;color:#ccc;transition:.2s}
 .fbtn:hover{border-color:#e94560;color:#fff}
 .fbtn.active{background:#e94560;color:#fff;border-color:#e94560}
@@ -125,6 +128,10 @@ body.card-mode .card-list{display:block}
     <div class="fbtn" data-opt="外国人△（アジアのみ）" onclick="toggleFilter(this)">外国人△（アジアのみ）</div>
     <div class="fbtn" data-opt="外国人△（日本語可）" onclick="toggleFilter(this)">外国人△（日本語可）</div>
   </div>
+
+  <h3>出勤日で絞り込み</h3>
+  <p class="schedule-meta" id="scheduleMeta">出勤情報を読み込み中...</p>
+  <div class="filter-row" id="scheduleBtns"></div>
 </div>
 
 <p class="stats" id="stats">表示中: <span>235</span> / 235名</p>
@@ -378,6 +385,18 @@ body.card-mode .card-list{display:block}
 <script>
 let activeFilters = new Set();
 let selectedCastRow = null;
+let activeScheduleDate = '';
+let scheduleData = null;
+let scheduleByName = new Map();
+let profileByName = new Map();
+
+function normalizeCastName(value) {
+  return (value || '')
+    .replace(/\s+/g, '')
+    .replace(/\/(単体AV|即尺|元タレント).*$/u, '')
+    .replace(/・(店長オススメ|極嬢|超逸材|超新星|未経験|極上|JK|元タレント|動画無料|激推し嬢|推姫|アイドル|憧れの美ギャル|全身性感帯|看板候補|絶対的看板娘|最高峰の美女|最高傑作|SSS級美女|完全未経験|完全業界未経験|動画撮影無料|動画即尺無料|動画即即無料|潮吹き＆動画無料|高級ソ〇プ出身|元CA|単体AV|18歳).*$/u, '')
+    .replace(/ALLオプション無料$/u, '');
+}
 
 function assignCastIds() {
   document.querySelectorAll('#tbody tr').forEach((row, index) => {
@@ -415,6 +434,90 @@ function initCards() {
     `;
     cardList.appendChild(card);
   });
+}
+
+function buildScheduleIndexes(data) {
+  scheduleByName = new Map();
+  profileByName = new Map();
+  Object.entries(data.profilesByName || {}).forEach(([name, profile]) => {
+    profileByName.set(name, profile);
+  });
+  Object.entries(data.castsByDate || {}).forEach(([date, casts]) => {
+    casts.forEach(cast => {
+      const key = cast.normalizedName || normalizeCastName(cast.name);
+      if (!scheduleByName.has(key)) scheduleByName.set(key, new Map());
+      scheduleByName.get(key).set(date, cast);
+      profileByName.set(key, cast);
+    });
+  });
+}
+
+function applyProfileLinks() {
+  document.querySelectorAll('#tbody tr').forEach(row => {
+    const cell = row.children[1];
+    const key = normalizeCastName(row.dataset.name || cell.textContent);
+    const profile = profileByName.get(key);
+    if (!profile || cell.querySelector('a')) return;
+    const link = document.createElement('a');
+    link.href = profile.profileUrl;
+    link.target = '_blank';
+    link.rel = 'noopener';
+    link.textContent = cell.textContent;
+    cell.textContent = '';
+    cell.appendChild(link);
+  });
+}
+
+function renderScheduleFilters() {
+  const container = document.getElementById('scheduleBtns');
+  const meta = document.getElementById('scheduleMeta');
+  container.innerHTML = '';
+  if (!scheduleData || !scheduleData.dates || scheduleData.dates.length === 0) {
+    meta.textContent = '出勤情報がありません';
+    return;
+  }
+  const synced = scheduleData.syncedAt ? new Date(scheduleData.syncedAt) : null;
+  meta.textContent = synced ? `ヘブン出勤同期: ${synced.toLocaleString('ja-JP')}` : 'ヘブン出勤同期済み';
+
+  const allBtn = document.createElement('div');
+  allBtn.className = 'fbtn active';
+  allBtn.dataset.date = '';
+  allBtn.textContent = '全日';
+  allBtn.onclick = () => setScheduleDate('');
+  container.appendChild(allBtn);
+
+  scheduleData.dates.forEach(day => {
+    const count = (scheduleData.castsByDate && scheduleData.castsByDate[day.date] || []).length;
+    const btn = document.createElement('div');
+    btn.className = 'fbtn';
+    btn.dataset.date = day.date;
+    btn.textContent = `${day.label} ${count}`;
+    btn.onclick = () => setScheduleDate(day.date);
+    container.appendChild(btn);
+  });
+}
+
+function setScheduleDate(date) {
+  activeScheduleDate = date;
+  document.querySelectorAll('#scheduleBtns .fbtn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.date === date);
+  });
+  applyFilters();
+}
+
+async function loadSchedule() {
+  const meta = document.getElementById('scheduleMeta');
+  try {
+    const response = await fetch('schedule.json', { cache: 'no-store' });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    scheduleData = await response.json();
+    buildScheduleIndexes(scheduleData);
+    applyProfileLinks();
+    renderScheduleFilters();
+    initCards();
+  } catch (error) {
+    meta.innerHTML = '<span class="schedule-error">出勤情報を読み込めませんでした</span>';
+  }
 }
 
 function totalCastCount() {
@@ -459,6 +562,7 @@ function applyFilters() {
   rows.forEach((row, index) => {
     const opts = row.dataset.opts ? row.dataset.opts.split(',') : [];
     const name = row.dataset.name || '';
+    const schedule = scheduleByName.get(normalizeCastName(name));
 
     let show = true;
     // Name filter
@@ -467,9 +571,29 @@ function applyFilters() {
     for (const f of activeFilters) {
       if (!opts.includes(f)) { show = false; break; }
     }
+    if (activeScheduleDate && (!schedule || !schedule.has(activeScheduleDate))) show = false;
 
     row.classList.toggle('hidden', !show);
-    if (cards[index]) cards[index].classList.toggle('hidden', !show);
+    if (activeScheduleDate && schedule && schedule.has(activeScheduleDate)) {
+      row.children[1].querySelector('.schedule-time')?.remove();
+      const time = document.createElement('span');
+      time.className = 'schedule-time';
+      time.textContent = schedule.get(activeScheduleDate).time;
+      row.children[1].appendChild(time);
+    } else {
+      row.children[1].querySelector('.schedule-time')?.remove();
+    }
+    if (cards[index]) {
+      cards[index].classList.toggle('hidden', !show);
+      const cardName = cards[index].querySelector('.card-name');
+      cardName.querySelector('.schedule-time')?.remove();
+      if (activeScheduleDate && schedule && schedule.has(activeScheduleDate)) {
+        const time = document.createElement('span');
+        time.className = 'schedule-time';
+        time.textContent = schedule.get(activeScheduleDate).time;
+        cardName.appendChild(time);
+      }
+    }
     if (show) count++;
   });
   updateStats(count);
@@ -477,7 +601,9 @@ function applyFilters() {
 
 function resetAll() {
   activeFilters.clear();
+  activeScheduleDate = '';
   document.querySelectorAll('.fbtn').forEach(b => b.classList.remove('active'));
+  document.querySelector('#scheduleBtns .fbtn[data-date=""]')?.classList.add('active');
   document.getElementById('nameSearch').value = '';
   applyFilters();
 }
@@ -528,6 +654,7 @@ function deleteSelectedCast() {
 
 document.addEventListener('DOMContentLoaded', () => {
   initCards();
+  loadSchedule();
   let savedView = '';
   try {
     savedView = window.localStorage.getItem('kittyOsakaView') || '';
