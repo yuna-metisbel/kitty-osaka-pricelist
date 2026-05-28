@@ -70,3 +70,22 @@ test('loads Heaven schedule, links profiles, and filters by work date', async ({
   await expect(page.locator('#tbody tr[data-name="Ria/りあ"]')).not.toHaveClass(/hidden/);
   await expect(page.locator('#tbody tr[data-name="Ria/りあ"] .schedule-time')).toContainText('～');
 });
+
+test('display adjusters update color strength and text scale', async ({ page }) => {
+  await page.goto('/');
+
+  await page.locator('#colorAdjust').evaluate(input => {
+    input.value = '2';
+    input.dispatchEvent(new Event('input', { bubbles: true }));
+  });
+  await expect(page.locator('body')).toHaveAttribute('data-color-level', '2');
+  await expect(page.locator('#colorAdjustValue')).toHaveText('最大');
+
+  await page.locator('#fontAdjust').evaluate(input => {
+    input.value = '115';
+    input.dispatchEvent(new Event('input', { bubbles: true }));
+  });
+  await expect(page.locator('#fontAdjustValue')).toHaveText('115%');
+  await expect(page.locator('html')).toHaveAttribute('style', /--font-scale: 1.15/);
+  await expect(page.getByRole('button', { name: '同期する' })).toBeVisible();
+});

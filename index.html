@@ -71,10 +71,36 @@ tr.hidden{display:none}
 .cast-menu button:hover{background:#ff5b74}
 body.card-mode .table-wrap{display:none}
 body.card-mode .card-list{display:block}
+.control-panel{max-width:1200px;margin:0 auto 10px;background:#101832;border:1px solid #33446f;border-radius:8px;padding:10px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.control-sliders{display:grid;grid-template-columns:repeat(2,minmax(180px,1fr));gap:10px}
+.control-field{display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:center;color:#d7def1;font-size:.78rem}
+.control-field b{color:#fff}
+.control-field output{min-width:42px;text-align:right;color:#51d18a;font-weight:bold}
+.control-field input[type="range"]{width:100%;accent-color:#ffb84d}
+.sync-tools{display:flex;gap:6px;align-items:center;justify-content:flex-end;flex-wrap:wrap}
+.sync-btn,.action-link{border:0;border-radius:18px;background:#2f8d5b;color:#fff;font-weight:bold;font-size:.76rem;padding:7px 12px;cursor:pointer;text-decoration:none}
+.sync-btn:hover,.action-link:hover{filter:brightness(1.12)}
+.action-link{background:#365fb8}
+html{font-size:calc(16px * var(--font-scale, 1))}
+body[data-color-level="1"]{background:#121729;color:#f5f7ff}
+body[data-color-level="1"] .filters,body[data-color-level="1"] table,body[data-color-level="1"] .girl-card{background:#1c294b;border-color:#40537f}
+body[data-color-level="1"] .fbtn,body[data-color-level="1"] .price-pill,body[data-color-level="1"] td.opts span,body[data-color-level="1"] .card-opts span,body[data-color-level="1"] .search-box input{background:#143c72;border-color:#5574a8;color:#eef4ff}
+body[data-color-level="1"] .fbtn.active,body[data-color-level="1"] .view-btn.active,body[data-color-level="1"] .reset-btn{background:#ff3f68}
+body[data-color-level="2"]{background:#080b12;color:#fff}
+body[data-color-level="2"] h1,body[data-color-level="2"] td:nth-child(2),body[data-color-level="2"] .card-name{color:#fff}
+body[data-color-level="2"] .filters,body[data-color-level="2"] table,body[data-color-level="2"] .girl-card,body[data-color-level="2"] .control-panel{background:#111b31;border:2px solid #6f91ff}
+body[data-color-level="2"] thead,body[data-color-level="2"] .view-switch,body[data-color-level="2"] .price-pill,body[data-color-level="2"] .search-box input{background:#071f43;border-color:#78a8ff}
+body[data-color-level="2"] .fbtn,body[data-color-level="2"] td.opts span,body[data-color-level="2"] .card-opts span{background:#003a74;border-color:#7bb6ff;color:#fff}
+body[data-color-level="2"] .fbtn.active,body[data-color-level="2"] .view-btn.active,body[data-color-level="2"] .reset-btn{background:#ff2558;color:#fff;box-shadow:0 0 0 2px #ffd166 inset}
+body[data-color-level="2"] th,body[data-color-level="2"] .filters h3,body[data-color-level="2"] .stats span,body[data-color-level="2"] .price-pill b{color:#ffdd57}
+body[data-color-level="2"] .schedule-time{color:#7dff9e}
 @media (max-width: 720px){
   body{padding:10px;background:#11172b}
   h1{font-size:1.05rem;line-height:1.35}
   .subtitle{font-size:.72rem}
+  .control-panel{grid-template-columns:1fr;padding:9px}
+  .control-sliders{grid-template-columns:1fr}
+  .sync-tools{justify-content:flex-start}
   .search-box{position:sticky;top:0;z-index:20;background:#11172b;padding:4px 0 8px}
   .filters{padding:10px}
   .filter-row{max-height:116px;overflow:auto}
@@ -89,6 +115,25 @@ body.card-mode .card-list{display:block}
 <body>
 <h1>プラチナムレジェンド 料金&オプション一覧</h1>
 <p class="subtitle">全235名 ｜ 店長コメント欄記載の料金（税込）+ 可能オプション</p>
+
+<div class="control-panel" aria-label="表示調整">
+  <div class="control-sliders">
+    <label class="control-field">
+      <b>色の強さ</b>
+      <input type="range" id="colorAdjust" min="0" max="2" step="1" value="1" oninput="setColorLevel(this.value)">
+      <output id="colorAdjustValue">強</output>
+    </label>
+    <label class="control-field">
+      <b>文字サイズ</b>
+      <input type="range" id="fontAdjust" min="90" max="125" step="5" value="100" oninput="setFontScale(this.value)">
+      <output id="fontAdjustValue">100%</output>
+    </label>
+  </div>
+  <div class="sync-tools">
+    <button class="sync-btn" type="button" onclick="syncScheduleNow()">同期する</button>
+    <a class="action-link" href="https://github.com/yuna-metisbel/kitty-osaka-pricelist/actions/workflows/sync-schedule.yml" target="_blank" rel="noopener">ヘブン再取得</a>
+  </div>
+</div>
 
 <div class="search-box">
   <input type="text" id="nameSearch" placeholder="名前で検索..." oninput="applyFilters()">
@@ -389,6 +434,38 @@ let activeScheduleDate = '';
 let scheduleData = null;
 let scheduleByName = new Map();
 let profileByName = new Map();
+const colorLabels = ['標準', '強', '最大'];
+
+function setColorLevel(value) {
+  const level = String(value);
+  document.body.dataset.colorLevel = level;
+  document.getElementById('colorAdjust').value = level;
+  document.getElementById('colorAdjustValue').textContent = colorLabels[Number(level)] || '強';
+  try {
+    window.localStorage.setItem('kittyOsakaColorLevel', level);
+  } catch (e) {}
+}
+
+function setFontScale(value) {
+  const percent = Number(value);
+  document.documentElement.style.setProperty('--font-scale', String(percent / 100));
+  document.getElementById('fontAdjust').value = String(percent);
+  document.getElementById('fontAdjustValue').textContent = `${percent}%`;
+  try {
+    window.localStorage.setItem('kittyOsakaFontScale', String(percent));
+  } catch (e) {}
+}
+
+function loadDisplaySettings() {
+  let colorLevel = '1';
+  let fontScale = '100';
+  try {
+    colorLevel = window.localStorage.getItem('kittyOsakaColorLevel') || colorLevel;
+    fontScale = window.localStorage.getItem('kittyOsakaFontScale') || fontScale;
+  } catch (e) {}
+  setColorLevel(colorLevel);
+  setFontScale(fontScale);
+}
 
 function normalizeCastName(value) {
   return (value || '')
@@ -506,19 +583,25 @@ function setScheduleDate(date) {
   applyFilters();
 }
 
-async function loadSchedule() {
+async function loadSchedule(isManual = false) {
   const meta = document.getElementById('scheduleMeta');
+  if (isManual) meta.textContent = '出勤情報を同期中...';
   try {
-    const response = await fetch('schedule.json', { cache: 'no-store' });
+    const response = await fetch(`schedule.json?ts=${Date.now()}`, { cache: 'no-store' });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     scheduleData = await response.json();
     buildScheduleIndexes(scheduleData);
     applyProfileLinks();
     renderScheduleFilters();
     initCards();
+    applyFilters();
   } catch (error) {
     meta.innerHTML = '<span class="schedule-error">出勤情報を読み込めませんでした</span>';
   }
+}
+
+function syncScheduleNow() {
+  loadSchedule(true);
 }
 
 function totalCastCount() {
@@ -654,6 +737,7 @@ function deleteSelectedCast() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  loadDisplaySettings();
   initCards();
   loadSchedule();
   let savedView = '';
