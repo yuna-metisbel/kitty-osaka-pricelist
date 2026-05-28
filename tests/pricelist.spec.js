@@ -27,3 +27,27 @@ test('right-clicking a cast name opens a delete action that removes the cast aft
   await expect(page.locator('.girl-card')).toHaveCount(234);
   await expect(page.locator('.girl-card').first().locator('.card-name')).not.toHaveText('初代LV・咲蘭/さらん');
 });
+
+test('filters casts by foreign guest support tags', async ({ page }) => {
+  await page.goto('/');
+
+  await page.locator('#filterBtns .fbtn').filter({ hasText: '外国人⚪︎' }).click();
+  await expect(page.locator('#stats')).toContainText('57 / 235名');
+  await expect(page.locator('#tbody tr:not(.hidden)').first().locator('td').nth(1)).toHaveText('初代LV・咲蘭/さらん');
+  await expect(page.locator('#tbody tr[data-name="彩羽/いろは"]')).not.toHaveClass(/hidden/);
+  await expect(page.locator('#tbody tr[data-name="心/こころ"]')).toHaveClass(/hidden/);
+
+  await page.getByRole('button', { name: 'リセット' }).click();
+  await page.locator('#filterBtns .fbtn').filter({ hasText: '外国人△（アジアのみ）' }).click();
+  await expect(page.locator('#stats')).toContainText('3 / 235名');
+  await expect(page.locator('#tbody tr:not(.hidden)').locator('td:nth-child(2)')).toHaveText([
+    'Ria/りあ',
+    '如月りのん',
+    '純粋/ぴゅあ',
+  ]);
+
+  await page.getByRole('button', { name: 'リセット' }).click();
+  await page.locator('#filterBtns .fbtn').filter({ hasText: '外国人△（日本語可）' }).click();
+  await expect(page.locator('#stats')).toContainText('9 / 235名');
+  await expect(page.locator('#tbody tr[data-name="王妃瑠璃/おうひるり"]')).not.toHaveClass(/hidden/);
+});
