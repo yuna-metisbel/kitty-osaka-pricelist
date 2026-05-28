@@ -486,8 +486,9 @@ function renderScheduleFilters() {
   allBtn.onclick = () => setScheduleDate('');
   container.appendChild(allBtn);
 
+  const rows = [...document.querySelectorAll('#tbody tr')];
   scheduleData.dates.forEach(day => {
-    const count = (scheduleData.castsByDate && scheduleData.castsByDate[day.date] || []).length;
+    const count = rows.filter(row => scheduleByName.get(normalizeCastName(row.dataset.name))?.has(day.date)).length;
     const btn = document.createElement('div');
     btn.className = 'fbtn';
     btn.dataset.date = day.date;
