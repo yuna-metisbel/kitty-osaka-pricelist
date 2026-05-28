@@ -149,7 +149,7 @@ body[data-color-level="2"] .schedule-time{color:#0f7a45}
   </div>
   <div class="sync-tools">
     <button class="sync-btn" type="button" onclick="syncScheduleNow()">同期する</button>
-    <a class="action-link" href="https://github.com/yuna-metisbel/kitty-osaka-pricelist/actions/workflows/sync-schedule.yml" target="_blank" rel="noopener">ヘブン再取得</a>
+    <a class="action-link" href="https://github.com/yuna-metisbel/kitty-osaka-pricelist/actions/workflows/sync-schedule.yml" target="_blank" rel="noopener">出勤再取得</a>
   </div>
 </div>
 
@@ -930,7 +930,8 @@ function renderScheduleFilters() {
     return;
   }
   const synced = scheduleData.syncedAt ? new Date(scheduleData.syncedAt) : null;
-  meta.textContent = synced ? `ヘブン出勤同期: ${synced.toLocaleString('ja-JP')}` : 'ヘブン出勤同期済み';
+  const sourceLabel = scheduleData.source === 'Venry' ? 'Venry出勤同期' : 'ヘブン出勤同期';
+  meta.textContent = synced ? `${sourceLabel}: ${synced.toLocaleString('ja-JP')}` : `${sourceLabel}済み`;
 
   const allBtn = document.createElement('div');
   allBtn.className = 'fbtn active';

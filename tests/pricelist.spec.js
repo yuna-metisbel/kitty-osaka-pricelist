@@ -59,7 +59,7 @@ test('loads Heaven schedule, links profiles, and filters by work date', async ({
   );
 
   await page.goto('/');
-  await expect(page.locator('#scheduleMeta')).toContainText('ヘブン出勤同期');
+  await expect(page.locator('#scheduleMeta')).toContainText('出勤同期');
   await expect(page.locator('#tbody tr[data-name="Ria/りあ"] td:nth-child(2) a')).toHaveAttribute(
     'href',
     /girlid-47844108/

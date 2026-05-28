@@ -16,7 +16,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: node scripts/sync-heaven-schedule.js
+      - run: node scripts/sync-venry-schedule.js
+        env:
+          VENRY_LOGIN_ID: ${{ secrets.VENRY_LOGIN_ID }}
+          VENRY_PASSWORD: ${{ secrets.VENRY_PASSWORD }}
       - name: Commit schedule update
         run: |
           if git diff --quiet -- schedule.json; then
