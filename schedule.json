@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-05-31T11:05:02.034Z",
+  "syncedAt": "2026-05-31T12:17:23.417Z",
   "dates": [
     {
       "date": "2026-05-31",
@@ -359,6 +359,14 @@
         "time": "15:00～03:00"
       },
       {
+        "girlId": "65806613",
+        "venryGirlId": "3708681",
+        "name": "まりあ・元グラビア",
+        "normalizedName": "まりあ・元グラビア",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-65806613/?of=y2",
+        "time": "15:00～21:00"
+      },
+      {
         "girlId": "51964446",
         "venryGirlId": "4102609",
         "name": "初代LV・咲蘭/さらん",
@@ -641,6 +649,14 @@
         "normalizedName": "ふあ",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66226166/?of=y2",
         "time": "15:00～01:00"
+      },
+      {
+        "girlId": "56118871",
+        "venryGirlId": "2843284",
+        "name": "まお・電撃復帰",
+        "normalizedName": "まお・電撃復帰",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-56118871/?of=y2",
+        "time": "15:00～03:00"
       },
       {
         "girlId": "54396484",
@@ -927,6 +943,14 @@
         "time": "18:00～01:00"
       },
       {
+        "girlId": "56118871",
+        "venryGirlId": "2843284",
+        "name": "まお・電撃復帰",
+        "normalizedName": "まお・電撃復帰",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-56118871/?of=y2",
+        "time": "18:00～03:00"
+      },
+      {
         "girlId": "65888696",
         "venryGirlId": "3808481",
         "name": "せーら・店長オススメ",
@@ -967,6 +991,14 @@
         "normalizedName": "海砂/みさ",
         "profileUrl": "",
         "time": "14:00～02:00"
+      },
+      {
+        "girlId": "56118871",
+        "venryGirlId": "2843284",
+        "name": "まお・電撃復帰",
+        "normalizedName": "まお・電撃復帰",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-56118871/?of=y2",
+        "time": "15:00～03:00"
       },
       {
         "girlId": "54396484",
