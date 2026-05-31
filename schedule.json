@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-05-31T04:45:22.009Z",
+  "syncedAt": "2026-05-31T08:19:42.861Z",
   "dates": [
     {
       "date": "2026-05-31",
@@ -36,6 +36,14 @@
   ],
   "castsByDate": {
     "2026-05-31": [
+      {
+        "girlId": "65601387",
+        "venryGirlId": "2990269",
+        "name": "もな・JK",
+        "normalizedName": "もな",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-65601387/?of=y2",
+        "time": "00:00～05:00"
+      },
       {
         "girlId": "4098447",
         "venryGirlId": "4098447",
@@ -391,6 +399,14 @@
         "time": "17:00～04:00"
       },
       {
+        "girlId": "65601387",
+        "venryGirlId": "2990269",
+        "name": "もな・JK",
+        "normalizedName": "もな",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-65601387/?of=y2",
+        "time": "18:00～00:00"
+      },
+      {
         "girlId": "60518597",
         "venryGirlId": "3870234",
         "name": "日向なつきALLオプション無料",
@@ -405,6 +421,14 @@
         "normalizedName": "ちい",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-63081800/?of=y2",
         "time": "18:00～05:00"
+      },
+      {
+        "girlId": "66469341",
+        "venryGirlId": "4421937",
+        "name": "ゆゆ・完全業界未経験",
+        "normalizedName": "ゆゆ",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66469341/?of=y2",
+        "time": "20:00～04:00"
       },
       {
         "girlId": "57756990",
