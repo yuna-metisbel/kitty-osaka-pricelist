@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-05-31T12:17:23.417Z",
+  "syncedAt": "2026-05-31T14:51:42.064Z",
   "dates": [
     {
       "date": "2026-05-31",
@@ -431,6 +431,14 @@
         "time": "18:00～00:00"
       },
       {
+        "girlId": "59607132",
+        "venryGirlId": "2628620",
+        "name": "歌唄/うたう",
+        "normalizedName": "歌唄/うたう",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-59607132/?of=y2",
+        "time": "18:00～01:00"
+      },
+      {
         "girlId": "60518597",
         "venryGirlId": "3870234",
         "name": "日向なつきALLオプション無料",
@@ -461,6 +469,14 @@
         "normalizedName": "夢香/ゆめか",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-57756990/?of=y2",
         "time": "21:00～05:00"
+      },
+      {
+        "girlId": "63390779",
+        "venryGirlId": "3540080",
+        "name": "きゅん・全身性感帯",
+        "normalizedName": "きゅん",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-63390779/?of=y2",
+        "time": "22:00～05:00"
       }
     ],
     "2026-06-02": [
