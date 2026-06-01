@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-06-01T00:12:58.138Z",
+  "syncedAt": "2026-06-01T06:12:10.728Z",
   "dates": [
     {
       "date": "2026-06-01",
@@ -50,7 +50,7 @@
         "name": "Ria/りあ・憧れの美ギャル",
         "normalizedName": "Ria/りあ",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-47844108/?of=y2",
-        "time": "11:00～18:00"
+        "time": "11:00～17:00"
       },
       {
         "girlId": "57868423",
@@ -593,6 +593,14 @@
         "normalizedName": "まこと",
         "profileUrl": "",
         "time": "17:00～02:00"
+      },
+      {
+        "girlId": "51964446",
+        "venryGirlId": "4102609",
+        "name": "初代LV・咲蘭/さらん",
+        "normalizedName": "初代LV・咲蘭/さらん",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-51964446/?of=y2",
+        "time": "17:00～19:00"
       },
       {
         "girlId": "65804003",
