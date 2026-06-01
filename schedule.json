@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-05-31T22:08:38.552Z",
+  "syncedAt": "2026-06-01T00:12:58.138Z",
   "dates": [
     {
       "date": "2026-06-01",
@@ -109,14 +109,6 @@
         "time": "15:00～22:00"
       },
       {
-        "girlId": "66323040",
-        "venryGirlId": "4408090",
-        "name": "優真/ゆま",
-        "normalizedName": "優真/ゆま",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66323040/?of=y2",
-        "time": "15:00～23:00"
-      },
-      {
         "girlId": "3397655",
         "venryGirlId": "3397655",
         "name": "海砂/みさ",
@@ -179,6 +171,14 @@
         "normalizedName": "歌唄/うたう",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-59607132/?of=y2",
         "time": "18:00～01:00"
+      },
+      {
+        "girlId": "64725086",
+        "venryGirlId": "3337213",
+        "name": "一華/いちか・激押し嬢",
+        "normalizedName": "一華/いちか・激押し嬢",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-64725086/?of=y2",
+        "time": "18:00～02:00"
       },
       {
         "girlId": "60518597",
