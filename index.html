@@ -82,6 +82,10 @@ body.card-mode .card-list{display:block}
 .sync-btn:hover,.action-link:hover{filter:brightness(1.12)}
 .action-link{background:#365fb8}
 .editor-panel{max-width:1200px;margin:0 auto 12px;background:#fff;border:1px solid #d9e1ef;border-radius:8px;padding:12px;box-shadow:0 8px 22px rgba(30,41,59,.06)}
+.editor-panel.is-hidden{display:none}
+.editor-toggle-wrap{max-width:1200px;margin:0 auto 8px;text-align:center}
+.editor-toggle{border:0;border-radius:18px;background:#365fb8;color:#fff;font-weight:bold;font-size:.76rem;padding:8px 16px;cursor:pointer}
+.editor-toggle:hover{background:#2c4f9e}
 .editor-panel h3{font-size:.85rem;color:#e94560;margin-bottom:8px}
 .editor-toolbar{display:grid;grid-template-columns:minmax(180px,1fr) auto auto;gap:8px;margin-bottom:10px}
 .editor-panel select,.editor-panel input,.editor-panel textarea{width:100%;border:1px solid #c7d7f0;border-radius:8px;background:#fff;color:#172033;padding:8px;font:inherit;font-size:.8rem}
@@ -197,7 +201,10 @@ body[data-color-level="2"] .schedule-time{color:#0f7a45}
   <div class="filter-row" id="scheduleBtns"></div>
 </div>
 
-<div class="editor-panel" aria-label="キャスト手動編集">
+<div class="editor-toggle-wrap">
+  <button class="editor-toggle" type="button" onclick="toggleEditor()">手動編集</button>
+</div>
+<div class="editor-panel is-hidden" id="editorPanel" aria-label="キャスト手動編集">
   <h3>手動編集・新規追加・サイトURL紐付け</h3>
   <div class="editor-toolbar">
     <select id="castSelect" aria-label="編集するキャストを選択"></select>
@@ -654,6 +661,22 @@ function setEditorStatus(message) {
   }, 3000);
 }
 
+function showEditor() {
+  document.getElementById('editorPanel')?.classList.remove('is-hidden');
+}
+
+function hideEditor() {
+  document.getElementById('editorPanel')?.classList.add('is-hidden');
+}
+
+function toggleEditor() {
+  const panel = document.getElementById('editorPanel');
+  if (!panel) return;
+  const willShow = panel.classList.contains('is-hidden');
+  panel.classList.toggle('is-hidden');
+  if (willShow) panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
 function fillEditor(cast = {}) {
   document.getElementById('editName').value = cast.name || '';
   document.getElementById('editProfileUrl').value = cast.profileUrl || '';
@@ -732,6 +755,7 @@ function saveCastEdit() {
   refreshAfterManualEdit(id);
   document.getElementById('castSelect').value = id;
   setEditorStatus('保存しました');
+  hideEditor();
 }
 
 function deleteEditorCast() {
@@ -1126,6 +1150,7 @@ function editSelectedCast() {
   if (!selectedCastRow) return;
   const row = selectedCastRow;
   hideCastMenu();
+  showEditor();
   openEditorForRow(row);
   document.querySelector('.editor-panel')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
