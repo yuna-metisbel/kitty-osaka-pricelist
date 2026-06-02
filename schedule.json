@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-06-02T15:01:16.815Z",
+  "syncedAt": "2026-06-02T18:48:39.985Z",
   "dates": [
     {
       "date": "2026-06-03",
@@ -91,14 +91,6 @@
         "normalizedName": "白百合",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66031798/?of=y2",
         "time": "13:30～17:00"
-      },
-      {
-        "girlId": "51224130",
-        "venryGirlId": "2924485",
-        "name": "四季/しき・絶対的看板娘",
-        "normalizedName": "四季/しき",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-51224130/?of=y2",
-        "time": "14:00～22:00"
       },
       {
         "girlId": "66226166",
@@ -424,6 +416,14 @@
       }
     ],
     "2026-06-05": [
+      {
+        "girlId": "51943190",
+        "venryGirlId": "4430481",
+        "name": "らら",
+        "normalizedName": "らら",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-51943190/?of=y2",
+        "time": "00:00～04:00"
+      },
       {
         "girlId": "53607364",
         "venryGirlId": "2632124",
