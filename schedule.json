@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-06-01T22:14:11.200Z",
+  "syncedAt": "2026-06-02T00:21:38.265Z",
   "dates": [
     {
       "date": "2026-06-02",
@@ -53,6 +53,14 @@
         "time": "09:00～16:30"
       },
       {
+        "girlId": "4098447",
+        "venryGirlId": "4098447",
+        "name": "黒咲 もあ・オススメ嬢",
+        "normalizedName": "黒咲もあ・オススメ嬢",
+        "profileUrl": "",
+        "time": "09:00～22:00"
+      },
+      {
         "girlId": "65681548",
         "venryGirlId": "3726440",
         "name": "うた/単体AV・撮影無料",
@@ -67,14 +75,6 @@
         "normalizedName": "この",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66358058/?of=y2",
         "time": "12:00～17:00"
-      },
-      {
-        "girlId": "64532141",
-        "venryGirlId": "3212416",
-        "name": "白鳥れいか",
-        "normalizedName": "白鳥れいか",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-64532141/?of=y2",
-        "time": "12:00～23:00"
       },
       {
         "girlId": "66226166",
@@ -147,6 +147,14 @@
         "normalizedName": "らん",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66457591/?of=y2",
         "time": "16:00～23:30"
+      },
+      {
+        "girlId": "64532141",
+        "venryGirlId": "3212416",
+        "name": "白鳥れいか",
+        "normalizedName": "白鳥れいか",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-64532141/?of=y2",
+        "time": "16:30～23:00"
       },
       {
         "girlId": "60518597",
