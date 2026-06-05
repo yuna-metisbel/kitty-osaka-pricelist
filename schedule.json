@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-06-05T21:41:09.482Z",
+  "syncedAt": "2026-06-05T23:18:15.449Z",
   "dates": [
     {
       "date": "2026-06-06",
@@ -133,14 +133,6 @@
         "time": "15:00～03:00"
       },
       {
-        "girlId": "64531695",
-        "venryGirlId": "4262129",
-        "name": "ゆあな",
-        "normalizedName": "ゆあな",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-64531695/?of=y2",
-        "time": "15:00～03:00"
-      },
-      {
         "girlId": "64642364",
         "venryGirlId": "3469358",
         "name": "琴葉/ことは",
@@ -261,6 +253,14 @@
         "time": "18:00～05:00"
       },
       {
+        "girlId": "64531695",
+        "venryGirlId": "4262129",
+        "name": "ゆあな",
+        "normalizedName": "ゆあな",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-64531695/?of=y2",
+        "time": "20:00～03:00"
+      },
+      {
         "girlId": "59446412",
         "venryGirlId": "3766462",
         "name": "真凛/まりん・動画即 即無料",
@@ -302,6 +302,14 @@
       }
     ],
     "2026-06-07": [
+      {
+        "girlId": "66531778",
+        "venryGirlId": "3542375",
+        "name": "のどか・オススメ嬢",
+        "normalizedName": "のどか・オススメ嬢",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66531778/?of=y2",
+        "time": "10:00～03:00"
+      },
       {
         "girlId": "64531695",
         "venryGirlId": "4262129",
