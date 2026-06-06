@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-06-06T10:14:32.988Z",
+  "syncedAt": "2026-06-06T12:11:43.199Z",
   "dates": [
     {
       "date": "2026-06-06",
@@ -205,11 +205,11 @@
         "time": "17:00～05:00"
       },
       {
-        "girlId": "66428072",
+        "girlId": "3032269",
         "venryGirlId": "3032269",
-        "name": "しらたまちゃん単体AV",
-        "normalizedName": "しらたまちゃん単体AV",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66428072/?of=y2",
+        "name": "ましろ・単体AV",
+        "normalizedName": "ましろ",
+        "profileUrl": "",
         "time": "17:00～05:00"
       },
       {
@@ -617,6 +617,14 @@
         "time": "15:30～23:00"
       },
       {
+        "girlId": "3397655",
+        "venryGirlId": "3397655",
+        "name": "海砂/みさ",
+        "normalizedName": "海砂/みさ",
+        "profileUrl": "",
+        "time": "16:00～02:00"
+      },
+      {
         "girlId": "55957271",
         "venryGirlId": "2692728",
         "name": "翠/すい・極嬢",
@@ -657,20 +665,20 @@
         "time": "17:00～23:30"
       },
       {
+        "girlId": "4446302",
+        "venryGirlId": "4446302",
+        "name": "キラ・極嬢",
+        "normalizedName": "キラ",
+        "profileUrl": "",
+        "time": "18:00～03:00"
+      },
+      {
         "girlId": "66169198",
         "venryGirlId": "4397519",
         "name": "ローズ",
         "normalizedName": "ローズ",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66169198/?of=y2",
         "time": "18:00～05:00"
-      },
-      {
-        "girlId": "4446302",
-        "venryGirlId": "4446302",
-        "name": "キラ・極嬢",
-        "normalizedName": "キラ",
-        "profileUrl": "",
-        "time": "19:00～03:00"
       },
       {
         "girlId": "59446412",
@@ -845,6 +853,14 @@
         "time": "15:00～21:00"
       },
       {
+        "girlId": "3397655",
+        "venryGirlId": "3397655",
+        "name": "海砂/みさ",
+        "normalizedName": "海砂/みさ",
+        "profileUrl": "",
+        "time": "16:00～02:00"
+      },
+      {
         "girlId": "65477060",
         "venryGirlId": "2942186",
         "name": "一番星/イチバンボシ・極嬢",
@@ -899,6 +915,14 @@
         "normalizedName": "誉/ほまれ",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-49155483/?of=y2",
         "time": "18:00～01:00"
+      },
+      {
+        "girlId": "4446302",
+        "venryGirlId": "4446302",
+        "name": "キラ・極嬢",
+        "normalizedName": "キラ",
+        "profileUrl": "",
+        "time": "19:00～01:00"
       },
       {
         "girlId": "62784338",
