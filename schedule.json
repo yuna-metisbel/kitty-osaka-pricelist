@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-06-07T20:20:37.205Z",
+  "syncedAt": "2026-06-07T22:13:11.829Z",
   "dates": [
     {
       "date": "2026-06-08",
@@ -91,6 +91,14 @@
         "normalizedName": "能〇星華",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-59654823/?of=y2",
         "time": "13:00～22:00"
+      },
+      {
+        "girlId": "65806613",
+        "venryGirlId": "3708681",
+        "name": "まりあ・元グラビア",
+        "normalizedName": "まりあ・元グラビア",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-65806613/?of=y2",
+        "time": "14:00～20:00"
       },
       {
         "girlId": "51224130",
