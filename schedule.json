@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-06-07T18:11:33.935Z",
+  "syncedAt": "2026-06-07T20:20:37.205Z",
   "dates": [
     {
       "date": "2026-06-08",
@@ -43,6 +43,14 @@
         "normalizedName": "雅/みやび",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-62570305/?of=y2",
         "time": "09:00～15:00"
+      },
+      {
+        "girlId": "66009628",
+        "venryGirlId": "3766248",
+        "name": "天使/てんし・超逸材",
+        "normalizedName": "天使/てんし",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66009628/?of=y2",
+        "time": "10:00～13:00"
       },
       {
         "girlId": "66031798",
