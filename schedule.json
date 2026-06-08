@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-06-08T16:12:25.793Z",
+  "syncedAt": "2026-06-08T19:28:31.130Z",
   "dates": [
     {
       "date": "2026-06-09",
@@ -66,7 +66,7 @@
         "name": "Ria/りあ・憧れの美ギャル",
         "normalizedName": "Ria/りあ",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-47844108/?of=y2",
-        "time": "12:00～18:00"
+        "time": "12:30～18:00"
       },
       {
         "girlId": "66049971",
@@ -75,6 +75,14 @@
         "normalizedName": "すず",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66049971/?of=y2",
         "time": "14:00～05:00"
+      },
+      {
+        "girlId": "51224130",
+        "venryGirlId": "2924485",
+        "name": "四季/しき・絶対的看板娘",
+        "normalizedName": "四季/しき",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-51224130/?of=y2",
+        "time": "14:00～21:00"
       },
       {
         "girlId": "64725086",
@@ -585,6 +593,14 @@
         "time": "18:00～05:00"
       },
       {
+        "girlId": "57246617",
+        "venryGirlId": "3562289",
+        "name": "初恋/はつこい・最高峰の美女",
+        "normalizedName": "初恋/はつこい",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-57246617/?of=y2",
+        "time": "19:00～03:00"
+      },
+      {
         "girlId": "59446412",
         "venryGirlId": "3766462",
         "name": "真凛/まりん・動画即 即無料",
@@ -1030,7 +1046,7 @@
         "name": "王妃瑠璃/おうひるり",
         "normalizedName": "王妃瑠璃/おうひるり",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-59909114/?of=y2",
-        "time": "17:00～00:00"
+        "time": "19:00～01:00"
       }
     ]
   },
