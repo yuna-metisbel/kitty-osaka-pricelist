@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-06-09T16:11:04.146Z",
+  "syncedAt": "2026-06-09T19:24:00.853Z",
   "dates": [
     {
       "date": "2026-06-10",
@@ -464,6 +464,14 @@
       }
     ],
     "2026-06-12": [
+      {
+        "girlId": "63332633",
+        "venryGirlId": "3003172",
+        "name": "愛満/あみる",
+        "normalizedName": "愛満/あみる",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-63332633/?of=y2",
+        "time": "00:00～03:00"
+      },
       {
         "girlId": "66031798",
         "venryGirlId": "4387667",
