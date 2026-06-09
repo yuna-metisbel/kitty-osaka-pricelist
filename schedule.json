@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-06-09T04:17:59.301Z",
+  "syncedAt": "2026-06-09T08:37:48.802Z",
   "dates": [
     {
       "date": "2026-06-09",
@@ -51,6 +51,14 @@
         "normalizedName": "麗美/れみ",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-63083122/?of=y2",
         "time": "01:00～05:00"
+      },
+      {
+        "girlId": "53607364",
+        "venryGirlId": "2632124",
+        "name": "ことり/元タレント",
+        "normalizedName": "ことり",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-53607364/?of=y2",
+        "time": "01:30～05:00"
       },
       {
         "girlId": "65222332",
@@ -123,14 +131,6 @@
         "normalizedName": "みゆう",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-65990939/?of=y2",
         "time": "15:00～21:00"
-      },
-      {
-        "girlId": "53607364",
-        "venryGirlId": "2632124",
-        "name": "ことり/元タレント",
-        "normalizedName": "ことり",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-53607364/?of=y2",
-        "time": "16:00～05:00"
       },
       {
         "girlId": "65477060",
@@ -367,6 +367,14 @@
         "time": "16:00～02:00"
       },
       {
+        "girlId": "2687082",
+        "venryGirlId": "2687082",
+        "name": "あこ",
+        "normalizedName": "あこ",
+        "profileUrl": "",
+        "time": "16:00～05:00"
+      },
+      {
         "girlId": "65477060",
         "venryGirlId": "2942186",
         "name": "一番星/イチバンボシ・極嬢",
@@ -437,6 +445,14 @@
         "normalizedName": "キラ",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66729856/?of=y2",
         "time": "19:00～01:00"
+      },
+      {
+        "girlId": "60518597",
+        "venryGirlId": "3870234",
+        "name": "日向なつきALLオプション無料",
+        "normalizedName": "日向なつき",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-60518597/?of=y2",
+        "time": "19:30～03:00"
       },
       {
         "girlId": "65888696",
@@ -591,6 +607,14 @@
         "normalizedName": "雅/みやび",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-62570305/?of=y2",
         "time": "17:00～20:00"
+      },
+      {
+        "girlId": "60518597",
+        "venryGirlId": "3870234",
+        "name": "日向なつきALLオプション無料",
+        "normalizedName": "日向なつき",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-60518597/?of=y2",
+        "time": "18:00～03:00"
       },
       {
         "girlId": "66169198",
@@ -869,6 +893,14 @@
         "time": "16:00～02:00"
       },
       {
+        "girlId": "64927905",
+        "venryGirlId": "3262488",
+        "name": "ゆな・動画即尺無料",
+        "normalizedName": "ゆな",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-64927905/?of=y2",
+        "time": "17:00～00:00"
+      },
+      {
         "girlId": "49155483",
         "venryGirlId": "2704884",
         "name": "誉/ほまれ",
@@ -991,6 +1023,14 @@
         "time": "16:00～05:00"
       },
       {
+        "girlId": "64927905",
+        "venryGirlId": "3262488",
+        "name": "ゆな・動画即尺無料",
+        "normalizedName": "ゆな",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-64927905/?of=y2",
+        "time": "17:00～00:00"
+      },
+      {
         "girlId": "59909114",
         "venryGirlId": "3802357",
         "name": "王妃瑠璃/おうひるり",
@@ -1063,6 +1103,14 @@
         "normalizedName": "摩耶/まや",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66498135/?of=y2",
         "time": "13:00～20:00"
+      },
+      {
+        "girlId": "64430660",
+        "venryGirlId": "3421487",
+        "name": "天照アマテラス",
+        "normalizedName": "天照アマテラス",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-64430660/?of=y2",
+        "time": "16:00～20:00"
       },
       {
         "girlId": "66169198",
