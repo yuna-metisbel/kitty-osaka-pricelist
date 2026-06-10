@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-06-10T04:38:45.690Z",
+  "syncedAt": "2026-06-10T08:57:13.554Z",
   "dates": [
     {
       "date": "2026-06-10",
@@ -258,6 +258,14 @@
         "name": "心花/ときめき・看板候補",
         "normalizedName": "心花/ときめき",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-62784338/?of=y2",
+        "time": "21:00～05:00"
+      },
+      {
+        "girlId": "57756990",
+        "venryGirlId": "3623550",
+        "name": "夢香/ゆめか/即尺動画無料",
+        "normalizedName": "夢香/ゆめか",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-57756990/?of=y2",
         "time": "21:00～05:00"
       },
       {
