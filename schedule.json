@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-06-11T21:27:42.963Z",
+  "syncedAt": "2026-06-11T23:45:23.507Z",
   "dates": [
     {
       "date": "2026-06-12",
@@ -91,6 +91,14 @@
         "normalizedName": "璃子/りこ",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-64953567/?of=y2",
         "time": "10:30～16:00"
+      },
+      {
+        "girlId": "64430660",
+        "venryGirlId": "3421487",
+        "name": "天照アマテラス",
+        "normalizedName": "天照アマテラス",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-64430660/?of=y2",
+        "time": "11:00～16:00"
       },
       {
         "girlId": "66031798",
