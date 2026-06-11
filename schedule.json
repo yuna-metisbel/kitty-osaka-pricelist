@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-06-11T10:53:10.623Z",
+  "syncedAt": "2026-06-11T14:48:49.559Z",
   "dates": [
     {
       "date": "2026-06-11",
@@ -407,6 +407,14 @@
         "time": "17:00～03:00"
       },
       {
+        "girlId": "3676490",
+        "venryGirlId": "3676490",
+        "name": "ひな",
+        "normalizedName": "ひな",
+        "profileUrl": "",
+        "time": "17:00～05:00"
+      },
+      {
         "girlId": "57868423",
         "venryGirlId": "3576547",
         "name": "由紀/ゆき・極上",
@@ -649,6 +657,14 @@
         "time": "17:00～04:00"
       },
       {
+        "girlId": "3676490",
+        "venryGirlId": "3676490",
+        "name": "ひな",
+        "normalizedName": "ひな",
+        "profileUrl": "",
+        "time": "17:00～05:00"
+      },
+      {
         "girlId": "57868423",
         "venryGirlId": "3576547",
         "name": "由紀/ゆき・極上",
@@ -827,6 +843,14 @@
         "time": "17:00～04:00"
       },
       {
+        "girlId": "3676490",
+        "venryGirlId": "3676490",
+        "name": "ひな",
+        "normalizedName": "ひな",
+        "profileUrl": "",
+        "time": "17:00～05:00"
+      },
+      {
         "girlId": "57868423",
         "venryGirlId": "3576547",
         "name": "由紀/ゆき・極上",
@@ -933,6 +957,14 @@
         "time": "16:00～20:00"
       },
       {
+        "girlId": "66765039",
+        "venryGirlId": "3635888",
+        "name": "瑠々/るる",
+        "normalizedName": "瑠々/るる",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66765039/?of=y2",
+        "time": "17:00～05:00"
+      },
+      {
         "girlId": "66169198",
         "venryGirlId": "4397519",
         "name": "ローズ",
@@ -991,6 +1023,14 @@
         "time": "13:00～20:00"
       },
       {
+        "girlId": "66765039",
+        "venryGirlId": "3635888",
+        "name": "瑠々/るる",
+        "normalizedName": "瑠々/るる",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66765039/?of=y2",
+        "time": "17:00～05:00"
+      },
+      {
         "girlId": "57868423",
         "venryGirlId": "3576547",
         "name": "由紀/ゆき・極上",
@@ -1039,6 +1079,14 @@
         "normalizedName": "初代LV・咲蘭/さらん",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-51964446/?of=y2",
         "time": "15:00～22:00"
+      },
+      {
+        "girlId": "66765039",
+        "venryGirlId": "3635888",
+        "name": "瑠々/るる",
+        "normalizedName": "瑠々/るる",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66765039/?of=y2",
+        "time": "17:00～05:00"
       },
       {
         "girlId": "57274749",
