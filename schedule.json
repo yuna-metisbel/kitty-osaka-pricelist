@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-06-11T05:59:46.185Z",
+  "syncedAt": "2026-06-11T10:53:10.623Z",
   "dates": [
     {
       "date": "2026-06-11",
@@ -149,6 +149,14 @@
         "time": "17:00～03:00"
       },
       {
+        "girlId": "3676490",
+        "venryGirlId": "3676490",
+        "name": "ひな",
+        "normalizedName": "ひな",
+        "profileUrl": "",
+        "time": "17:00～05:00"
+      },
+      {
         "girlId": "62570305",
         "venryGirlId": "4093462",
         "name": "雅/みやび",
@@ -205,14 +213,6 @@
         "time": "18:00～23:00"
       },
       {
-        "girlId": "56118871",
-        "venryGirlId": "2843284",
-        "name": "まお・電撃復帰",
-        "normalizedName": "まお・電撃復帰",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-56118871/?of=y2",
-        "time": "19:00～03:00"
-      },
-      {
         "girlId": "57246617",
         "venryGirlId": "3562289",
         "name": "初恋/はつこい・最高峰の美女",
@@ -227,6 +227,14 @@
         "normalizedName": "真凛/まりん",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-59446412/?of=y2",
         "time": "20:00～05:00"
+      },
+      {
+        "girlId": "63083122",
+        "venryGirlId": "3570592",
+        "name": "麗美/れみ・極嬢",
+        "normalizedName": "麗美/れみ",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-63083122/?of=y2",
+        "time": "21:00～04:00"
       },
       {
         "girlId": "62784338",
@@ -415,14 +423,6 @@
         "time": "18:00～01:00"
       },
       {
-        "girlId": "56118871",
-        "venryGirlId": "2843284",
-        "name": "まお・電撃復帰",
-        "normalizedName": "まお・電撃復帰",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-56118871/?of=y2",
-        "time": "18:00～03:00"
-      },
-      {
         "girlId": "59909114",
         "venryGirlId": "3802357",
         "name": "王妃瑠璃/おうひるり",
@@ -537,6 +537,14 @@
         "time": "12:00～18:00"
       },
       {
+        "girlId": "62722457",
+        "venryGirlId": "4108481",
+        "name": "心/こころ・店長オススメ",
+        "normalizedName": "心/こころ",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-62722457/?of=y2",
+        "time": "12:00～20:00"
+      },
+      {
         "girlId": "64532141",
         "venryGirlId": "3212416",
         "name": "白鳥れいか",
@@ -575,14 +583,6 @@
         "normalizedName": "一華/いちか・激押し嬢",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-64725086/?of=y2",
         "time": "15:00～02:00"
-      },
-      {
-        "girlId": "56118871",
-        "venryGirlId": "2843284",
-        "name": "まお・電撃復帰",
-        "normalizedName": "まお・電撃復帰",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-56118871/?of=y2",
-        "time": "15:00～03:00"
       },
       {
         "girlId": "64642364",
@@ -737,6 +737,14 @@
         "normalizedName": "Ria/りあ",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-47844108/?of=y2",
         "time": "12:00～18:00"
+      },
+      {
+        "girlId": "62722457",
+        "venryGirlId": "4108481",
+        "name": "心/こころ・店長オススメ",
+        "normalizedName": "心/こころ",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-62722457/?of=y2",
+        "time": "12:00～20:00"
       },
       {
         "girlId": "64642364",
