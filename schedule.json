@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-06-10T22:12:44.118Z",
+  "syncedAt": "2026-06-11T00:24:13.167Z",
   "dates": [
     {
       "date": "2026-06-11",
@@ -147,14 +147,6 @@
         "normalizedName": "一番星/イチバンボシ",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-65477060/?of=y2",
         "time": "16:00～05:00"
-      },
-      {
-        "girlId": "64983904",
-        "venryGirlId": "4444035",
-        "name": "きらめき・JK",
-        "normalizedName": "きらめき",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-64983904/?of=y2",
-        "time": "17:00～03:00"
       },
       {
         "girlId": "62570305",
