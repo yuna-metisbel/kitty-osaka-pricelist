@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-06-12T09:07:33.663Z",
+  "syncedAt": "2026-06-12T12:27:46.685Z",
   "dates": [
     {
       "date": "2026-06-12",
@@ -625,6 +625,14 @@
         "time": "12:00～18:00"
       },
       {
+        "girlId": "66615469",
+        "venryGirlId": "4433622",
+        "name": "めろめろちゃん",
+        "normalizedName": "めろめろちゃん",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66615469/?of=y2",
+        "time": "12:00～20:00"
+      },
+      {
         "girlId": "62722457",
         "venryGirlId": "4108481",
         "name": "心/こころ・店長オススメ",
@@ -775,6 +783,14 @@
         "normalizedName": "せーら",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-65888696/?of=y2",
         "time": "18:00～04:00"
+      },
+      {
+        "girlId": "63351505",
+        "venryGirlId": "3766958",
+        "name": "ピノコ・単体AV女優",
+        "normalizedName": "ピノコ",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-63351505/?of=y2",
+        "time": "20:00～03:00"
       },
       {
         "girlId": "62784338",
@@ -931,6 +947,14 @@
         "normalizedName": "摩耶/まや",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66498135/?of=y2",
         "time": "13:00～20:00"
+      },
+      {
+        "girlId": "66615469",
+        "venryGirlId": "4433622",
+        "name": "めろめろちゃん",
+        "normalizedName": "めろめろちゃん",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66615469/?of=y2",
+        "time": "15:00～04:00"
       },
       {
         "girlId": "65673904",
