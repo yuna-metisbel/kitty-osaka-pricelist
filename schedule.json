@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-06-13T16:22:28.851Z",
+  "syncedAt": "2026-06-13T18:17:32.299Z",
   "dates": [
     {
       "date": "2026-06-14",
@@ -333,6 +333,14 @@
         "normalizedName": "由紀/ゆき",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-57868423/?of=y2",
         "time": "15:00～20:00"
+      },
+      {
+        "girlId": "54396484",
+        "venryGirlId": "3263347",
+        "name": "天使らな・動画無料",
+        "normalizedName": "天使らな",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-54396484/?of=y2",
+        "time": "15:00～21:00"
       },
       {
         "girlId": "65477060",
