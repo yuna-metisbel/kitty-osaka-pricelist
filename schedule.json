@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-06-13T08:29:12.028Z",
+  "syncedAt": "2026-06-13T11:22:44.705Z",
   "dates": [
     {
       "date": "2026-06-13",
@@ -631,6 +631,14 @@
         "normalizedName": "一華/いちか・激押し嬢",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-64725086/?of=y2",
         "time": "15:00～02:00"
+      },
+      {
+        "girlId": "57868423",
+        "venryGirlId": "3576547",
+        "name": "由紀/ゆき・極上",
+        "normalizedName": "由紀/ゆき",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-57868423/?of=y2",
+        "time": "15:00～20:00"
       },
       {
         "girlId": "65477060",
