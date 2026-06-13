@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-06-13T20:22:18.158Z",
+  "syncedAt": "2026-06-13T22:13:39.609Z",
   "dates": [
     {
       "date": "2026-06-14",
@@ -91,14 +91,6 @@
         "normalizedName": "心/こころ",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-62722457/?of=y2",
         "time": "12:00～20:00"
-      },
-      {
-        "girlId": "64642364",
-        "venryGirlId": "3469358",
-        "name": "琴葉/ことは",
-        "normalizedName": "琴葉/ことは",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-64642364/?of=y2",
-        "time": "13:00～22:00"
       },
       {
         "girlId": "54396484",
