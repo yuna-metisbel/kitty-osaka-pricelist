@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-06-13T04:42:05.085Z",
+  "syncedAt": "2026-06-13T08:29:12.028Z",
   "dates": [
     {
       "date": "2026-06-13",
@@ -213,14 +213,6 @@
         "time": "16:00～02:00"
       },
       {
-        "girlId": "64927905",
-        "venryGirlId": "3262488",
-        "name": "ゆな・動画即尺無料",
-        "normalizedName": "ゆな",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-64927905/?of=y2",
-        "time": "17:00～00:00"
-      },
-      {
         "girlId": "49155483",
         "venryGirlId": "2704884",
         "name": "誉/ほまれ",
@@ -267,6 +259,14 @@
         "normalizedName": "せーら",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-65888696/?of=y2",
         "time": "18:00～04:00"
+      },
+      {
+        "girlId": "59607132",
+        "venryGirlId": "2628620",
+        "name": "歌唄/うたう",
+        "normalizedName": "歌唄/うたう",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-59607132/?of=y2",
+        "time": "19:00～00:00"
       },
       {
         "girlId": "66761253",
@@ -453,14 +453,6 @@
         "normalizedName": "秘密/ひみつ・元アイドル",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-52060031/?of=y2",
         "time": "16:00～21:00"
-      },
-      {
-        "girlId": "64927905",
-        "venryGirlId": "3262488",
-        "name": "ゆな・動画即尺無料",
-        "normalizedName": "ゆな",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-64927905/?of=y2",
-        "time": "17:00～00:00"
       },
       {
         "girlId": "59909114",
