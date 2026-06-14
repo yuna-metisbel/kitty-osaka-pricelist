@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-06-13T22:13:39.609Z",
+  "syncedAt": "2026-06-14T00:17:17.531Z",
   "dates": [
     {
       "date": "2026-06-14",
@@ -133,14 +133,6 @@
         "time": "16:00～21:00"
       },
       {
-        "girlId": "59909114",
-        "venryGirlId": "3802357",
-        "name": "王妃瑠璃/おうひるり",
-        "normalizedName": "王妃瑠璃/おうひるり",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-59909114/?of=y2",
-        "time": "17:00～00:00"
-      },
-      {
         "girlId": "4444035",
         "venryGirlId": "4444035",
         "name": "煌/れなち・極上",
@@ -203,6 +195,14 @@
         "normalizedName": "せーら",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-65888696/?of=y2",
         "time": "18:00～04:00"
+      },
+      {
+        "girlId": "59909114",
+        "venryGirlId": "3802357",
+        "name": "王妃瑠璃/おうひるり",
+        "normalizedName": "王妃瑠璃/おうひるり",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-59909114/?of=y2",
+        "time": "19:00～01:00"
       },
       {
         "girlId": "66761253",
@@ -301,6 +301,14 @@
         "normalizedName": "摩耶/まや",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66498135/?of=y2",
         "time": "13:00～20:00"
+      },
+      {
+        "girlId": "65989250",
+        "venryGirlId": "3789495",
+        "name": "涼/りょう・極嬢",
+        "normalizedName": "涼/りょう",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-65989250/?of=y2",
+        "time": "15:00～00:00"
       },
       {
         "girlId": "4098447",
