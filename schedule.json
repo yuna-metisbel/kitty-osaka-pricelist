@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-06-14T05:59:33.552Z",
+  "syncedAt": "2026-06-14T09:50:47.702Z",
   "dates": [
     {
       "date": "2026-06-14",
@@ -195,6 +195,14 @@
         "normalizedName": "せーら",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-65888696/?of=y2",
         "time": "18:00～04:00"
+      },
+      {
+        "girlId": "66593945",
+        "venryGirlId": "4430481",
+        "name": "らら",
+        "normalizedName": "らら",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66593945/?of=y2",
+        "time": "19:00～01:00"
       },
       {
         "girlId": "59909114",
@@ -569,6 +577,14 @@
         "time": "21:00～05:00"
       },
       {
+        "girlId": "66593945",
+        "venryGirlId": "4430481",
+        "name": "らら",
+        "normalizedName": "らら",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66593945/?of=y2",
+        "time": "21:30～01:00"
+      },
+      {
         "girlId": "63390779",
         "venryGirlId": "3540080",
         "name": "きゅん・全身性感帯",
@@ -789,6 +805,14 @@
         "time": "17:00～05:00"
       },
       {
+        "girlId": "57868423",
+        "venryGirlId": "3576547",
+        "name": "由紀/ゆき・極上",
+        "normalizedName": "由紀/ゆき",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-57868423/?of=y2",
+        "time": "17:00～21:30"
+      },
+      {
         "girlId": "62784338",
         "venryGirlId": "4114555",
         "name": "心花/ときめき・看板候補",
@@ -877,6 +901,14 @@
         "normalizedName": "ひな",
         "profileUrl": "",
         "time": "17:00～05:00"
+      },
+      {
+        "girlId": "57868423",
+        "venryGirlId": "3576547",
+        "name": "由紀/ゆき・極上",
+        "normalizedName": "由紀/ゆき",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-57868423/?of=y2",
+        "time": "17:00～23:30"
       },
       {
         "girlId": "62570305",
