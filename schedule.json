@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-06-14T09:50:47.702Z",
+  "syncedAt": "2026-06-14T12:05:54.200Z",
   "dates": [
     {
       "date": "2026-06-14",
@@ -202,7 +202,7 @@
         "name": "らら",
         "normalizedName": "らら",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66593945/?of=y2",
-        "time": "19:00～01:00"
+        "time": "19:00～00:00"
       },
       {
         "girlId": "59909114",
