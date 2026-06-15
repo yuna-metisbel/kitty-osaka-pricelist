@@ -3,12 +3,8 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-06-15T13:23:24.050Z",
+  "syncedAt": "2026-06-15T18:44:46.282Z",
   "dates": [
-    {
-      "date": "2026-06-15",
-      "label": "6/15(月)"
-    },
     {
       "date": "2026-06-16",
       "label": "6/16(火)"
@@ -32,219 +28,13 @@
     {
       "date": "2026-06-21",
       "label": "6/21(日)"
+    },
+    {
+      "date": "2026-06-22",
+      "label": "6/22(月)"
     }
   ],
   "castsByDate": {
-    "2026-06-15": [
-      {
-        "girlId": "63332633",
-        "venryGirlId": "3003172",
-        "name": "愛満/あみる",
-        "normalizedName": "愛満/あみる",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-63332633/?of=y2",
-        "time": "00:00～03:00"
-      },
-      {
-        "girlId": "63348451",
-        "venryGirlId": "4167559",
-        "name": "愛琉/あいる・動画即尺無料",
-        "normalizedName": "愛琉/あいる",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-63348451/?of=y2",
-        "time": "09:00～16:00"
-      },
-      {
-        "girlId": "66731788",
-        "venryGirlId": "3542375",
-        "name": "のどか・オススメ嬢",
-        "normalizedName": "のどか・オススメ嬢",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66731788/?of=y2",
-        "time": "10:00～03:00"
-      },
-      {
-        "girlId": "66498135",
-        "venryGirlId": "4423483",
-        "name": "摩耶/まや・極嬢",
-        "normalizedName": "摩耶/まや",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66498135/?of=y2",
-        "time": "13:00～20:00"
-      },
-      {
-        "girlId": "65989250",
-        "venryGirlId": "3789495",
-        "name": "涼/りょう・極嬢",
-        "normalizedName": "涼/りょう",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-65989250/?of=y2",
-        "time": "15:00～00:00"
-      },
-      {
-        "girlId": "4098447",
-        "venryGirlId": "4098447",
-        "name": "黒咲 もあ・オススメ嬢",
-        "normalizedName": "黒咲もあ・オススメ嬢",
-        "profileUrl": "",
-        "time": "15:00～01:00"
-      },
-      {
-        "girlId": "64725086",
-        "venryGirlId": "3337213",
-        "name": "一華/いちか・激押し嬢",
-        "normalizedName": "一華/いちか・激押し嬢",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-64725086/?of=y2",
-        "time": "15:00～02:00"
-      },
-      {
-        "girlId": "65681548",
-        "venryGirlId": "3726440",
-        "name": "うた/単体AV・撮影無料",
-        "normalizedName": "うた",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-65681548/?of=y2",
-        "time": "15:00～03:00"
-      },
-      {
-        "girlId": "57868423",
-        "venryGirlId": "3576547",
-        "name": "由紀/ゆき・極上",
-        "normalizedName": "由紀/ゆき",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-57868423/?of=y2",
-        "time": "15:00～20:00"
-      },
-      {
-        "girlId": "59607132",
-        "venryGirlId": "2628620",
-        "name": "歌唄/うたう",
-        "normalizedName": "歌唄/うたう",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-59607132/?of=y2",
-        "time": "15:00～23:30"
-      },
-      {
-        "girlId": "54396484",
-        "venryGirlId": "3263347",
-        "name": "天使らな・動画無料",
-        "normalizedName": "天使らな",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-54396484/?of=y2",
-        "time": "16:00～02:00"
-      },
-      {
-        "girlId": "65477060",
-        "venryGirlId": "2942186",
-        "name": "一番星/イチバンボシ・極嬢",
-        "normalizedName": "一番星/イチバンボシ",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-65477060/?of=y2",
-        "time": "16:00～05:00"
-      },
-      {
-        "girlId": "64430660",
-        "venryGirlId": "3421487",
-        "name": "天照アマテラス",
-        "normalizedName": "天照アマテラス",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-64430660/?of=y2",
-        "time": "16:00～22:00"
-      },
-      {
-        "girlId": "64642364",
-        "venryGirlId": "3469358",
-        "name": "琴葉/ことは",
-        "normalizedName": "琴葉/ことは",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-64642364/?of=y2",
-        "time": "17:00～03:00"
-      },
-      {
-        "girlId": "3676490",
-        "venryGirlId": "3676490",
-        "name": "ひな",
-        "normalizedName": "ひな",
-        "profileUrl": "",
-        "time": "17:00～05:00"
-      },
-      {
-        "girlId": "60518597",
-        "venryGirlId": "3870234",
-        "name": "日向なつきALLオプション無料",
-        "normalizedName": "日向なつき",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-60518597/?of=y2",
-        "time": "18:00～03:00"
-      },
-      {
-        "girlId": "66169198",
-        "venryGirlId": "4397519",
-        "name": "ローズ",
-        "normalizedName": "ローズ",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66169198/?of=y2",
-        "time": "18:00～05:00"
-      },
-      {
-        "girlId": "3888534",
-        "venryGirlId": "3888534",
-        "name": "かのん",
-        "normalizedName": "かのん",
-        "profileUrl": "",
-        "time": "18:30～05:00"
-      },
-      {
-        "girlId": "59909114",
-        "venryGirlId": "3802357",
-        "name": "王妃瑠璃/おうひるり",
-        "normalizedName": "王妃瑠璃/おうひるり",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-59909114/?of=y2",
-        "time": "19:00～01:00"
-      },
-      {
-        "girlId": "66457591",
-        "venryGirlId": "3399706",
-        "name": "らん・店長オススメ",
-        "normalizedName": "らん",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66457591/?of=y2",
-        "time": "20:00～03:00"
-      },
-      {
-        "girlId": "66369740",
-        "venryGirlId": "2940570",
-        "name": "環奈/かんな・極嬢",
-        "normalizedName": "環奈/かんな",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66369740/?of=y2",
-        "time": "20:00～03:00"
-      },
-      {
-        "girlId": "59446412",
-        "venryGirlId": "3766462",
-        "name": "真凛/まりん・動画即 即無料",
-        "normalizedName": "真凛/まりん",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-59446412/?of=y2",
-        "time": "20:00～05:00"
-      },
-      {
-        "girlId": "62784338",
-        "venryGirlId": "4114555",
-        "name": "心花/ときめき・看板候補",
-        "normalizedName": "心花/ときめき",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-62784338/?of=y2",
-        "time": "21:00～05:00"
-      },
-      {
-        "girlId": "3397655",
-        "venryGirlId": "3397655",
-        "name": "海砂/みさ",
-        "normalizedName": "海砂/みさ",
-        "profileUrl": "",
-        "time": "21:30～02:00"
-      },
-      {
-        "girlId": "57756990",
-        "venryGirlId": "3623550",
-        "name": "夢香/ゆめか/即尺動画無料",
-        "normalizedName": "夢香/ゆめか",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-57756990/?of=y2",
-        "time": "22:00～05:00"
-      },
-      {
-        "girlId": "66765039",
-        "venryGirlId": "3635888",
-        "name": "瑠々/るる",
-        "normalizedName": "瑠々/るる",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66765039/?of=y2",
-        "time": "22:00～05:00"
-      }
-    ],
     "2026-06-16": [
       {
         "girlId": "63348451",
@@ -271,20 +61,20 @@
         "time": "11:00～17:00"
       },
       {
-        "girlId": "47844108",
-        "venryGirlId": "2571179",
-        "name": "Ria/りあ・憧れの美ギャル",
-        "normalizedName": "Ria/りあ",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-47844108/?of=y2",
-        "time": "11:00～18:00"
-      },
-      {
         "girlId": "65681548",
         "venryGirlId": "3726440",
         "name": "うた/単体AV・撮影無料",
         "normalizedName": "うた",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-65681548/?of=y2",
         "time": "12:00～03:00"
+      },
+      {
+        "girlId": "47844108",
+        "venryGirlId": "2571179",
+        "name": "Ria/りあ・憧れの美ギャル",
+        "normalizedName": "Ria/りあ",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-47844108/?of=y2",
+        "time": "12:00～18:00"
       },
       {
         "girlId": "54396484",
@@ -335,14 +125,6 @@
         "time": "16:00～00:00"
       },
       {
-        "girlId": "3397655",
-        "venryGirlId": "3397655",
-        "name": "海砂/みさ",
-        "normalizedName": "海砂/みさ",
-        "profileUrl": "",
-        "time": "16:00～02:00"
-      },
-      {
         "girlId": "65477060",
         "venryGirlId": "2942186",
         "name": "一番星/イチバンボシ・極嬢",
@@ -375,6 +157,14 @@
         "time": "17:00～23:30"
       },
       {
+        "girlId": "3397655",
+        "venryGirlId": "3397655",
+        "name": "海砂/みさ",
+        "normalizedName": "海砂/みさ",
+        "profileUrl": "",
+        "time": "18:00～02:00"
+      },
+      {
         "girlId": "60518597",
         "venryGirlId": "3870234",
         "name": "日向なつきALLオプション無料",
@@ -404,7 +194,7 @@
         "name": "天女/あまめ",
         "normalizedName": "天女/あまめ",
         "profileUrl": "",
-        "time": "19:00～02:30"
+        "time": "19:00～03:00"
       },
       {
         "girlId": "65888696",
@@ -561,14 +351,6 @@
         "time": "15:00～22:00"
       },
       {
-        "girlId": "3397655",
-        "venryGirlId": "3397655",
-        "name": "海砂/みさ",
-        "normalizedName": "海砂/みさ",
-        "profileUrl": "",
-        "time": "16:00～02:00"
-      },
-      {
         "girlId": "65477060",
         "venryGirlId": "2942186",
         "name": "一番星/イチバンボシ・極嬢",
@@ -583,14 +365,6 @@
         "normalizedName": "もな",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-65601387/?of=y2",
         "time": "16:00～21:00"
-      },
-      {
-        "girlId": "3676490",
-        "venryGirlId": "3676490",
-        "name": "ひな",
-        "normalizedName": "ひな",
-        "profileUrl": "",
-        "time": "17:00～05:00"
       },
       {
         "girlId": "54316342",
@@ -625,6 +399,14 @@
         "time": "18:00～01:00"
       },
       {
+        "girlId": "3397655",
+        "venryGirlId": "3397655",
+        "name": "海砂/みさ",
+        "normalizedName": "海砂/みさ",
+        "profileUrl": "",
+        "time": "18:00～02:00"
+      },
+      {
         "girlId": "60518597",
         "venryGirlId": "3870234",
         "name": "日向なつきALLオプション無料",
@@ -647,6 +429,14 @@
         "normalizedName": "初恋/はつこい",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-57246617/?of=y2",
         "time": "19:00～02:00"
+      },
+      {
+        "girlId": "3676490",
+        "venryGirlId": "3676490",
+        "name": "ひな",
+        "normalizedName": "ひな",
+        "profileUrl": "",
+        "time": "19:00～05:00"
       },
       {
         "girlId": "59446412",
@@ -779,6 +569,14 @@
         "time": "17:00～21:30"
       },
       {
+        "girlId": "3397655",
+        "venryGirlId": "3397655",
+        "name": "海砂/みさ",
+        "normalizedName": "海砂/みさ",
+        "profileUrl": "",
+        "time": "18:00～02:00"
+      },
+      {
         "girlId": "66457591",
         "venryGirlId": "3399706",
         "name": "らん・店長オススメ",
@@ -845,6 +643,14 @@
         "time": "11:00～18:00"
       },
       {
+        "girlId": "65681548",
+        "venryGirlId": "3726440",
+        "name": "うた/単体AV・撮影無料",
+        "normalizedName": "うた",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-65681548/?of=y2",
+        "time": "12:00～02:00"
+      },
+      {
         "girlId": "54396484",
         "venryGirlId": "3263347",
         "name": "天使らな・動画無料",
@@ -891,14 +697,6 @@
         "normalizedName": "初代LV・咲蘭/さらん",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-51964446/?of=y2",
         "time": "15:00～22:00"
-      },
-      {
-        "girlId": "3397655",
-        "venryGirlId": "3397655",
-        "name": "海砂/みさ",
-        "normalizedName": "海砂/みさ",
-        "profileUrl": "",
-        "time": "16:00～00:00"
       },
       {
         "girlId": "65477060",
@@ -1021,6 +819,14 @@
         "normalizedName": "ひめ",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-54316342/?of=y2",
         "time": "11:00～18:00"
+      },
+      {
+        "girlId": "65681548",
+        "venryGirlId": "3726440",
+        "name": "うた/単体AV・撮影無料",
+        "normalizedName": "うた",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-65681548/?of=y2",
+        "time": "12:00～02:00"
       },
       {
         "girlId": "66615469",
@@ -1169,6 +975,14 @@
         "time": "01:00～05:00"
       },
       {
+        "girlId": "65681548",
+        "venryGirlId": "3726440",
+        "name": "うた/単体AV・撮影無料",
+        "normalizedName": "うた",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-65681548/?of=y2",
+        "time": "12:00～02:00"
+      },
+      {
         "girlId": "47844108",
         "venryGirlId": "2571179",
         "name": "Ria/りあ・憧れの美ギャル",
@@ -1247,6 +1061,40 @@
         "normalizedName": "すず",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66049971/?of=y2",
         "time": "23:30～05:00"
+      }
+    ],
+    "2026-06-22": [
+      {
+        "girlId": "64953567",
+        "venryGirlId": "3017635",
+        "name": "璃子/りこ",
+        "normalizedName": "璃子/りこ",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-64953567/?of=y2",
+        "time": "10:30～16:00"
+      },
+      {
+        "girlId": "57868423",
+        "venryGirlId": "3576547",
+        "name": "由紀/ゆき・極上",
+        "normalizedName": "由紀/ゆき",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-57868423/?of=y2",
+        "time": "17:00～23:30"
+      },
+      {
+        "girlId": "66049971",
+        "venryGirlId": "4389245",
+        "name": "すず・未経験",
+        "normalizedName": "すず",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66049971/?of=y2",
+        "time": "20:00～05:00"
+      },
+      {
+        "girlId": "63390779",
+        "venryGirlId": "3540080",
+        "name": "きゅん・全身性感帯",
+        "normalizedName": "きゅん",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-63390779/?of=y2",
+        "time": "22:00～05:00"
       }
     ]
   },
