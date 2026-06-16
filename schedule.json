@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-06-16T21:14:49.025Z",
+  "syncedAt": "2026-06-16T23:41:48.456Z",
   "dates": [
     {
       "date": "2026-06-17",
@@ -37,20 +37,20 @@
   "castsByDate": {
     "2026-06-17": [
       {
-        "girlId": "66765039",
-        "venryGirlId": "3635888",
-        "name": "瑠々/るる",
-        "normalizedName": "瑠々/るる",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66765039/?of=y2",
-        "time": "09:00～05:00"
-      },
-      {
         "girlId": "63496020",
         "venryGirlId": "2782642",
         "name": "元CA・春/はる",
         "normalizedName": "元CA・春/はる",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-63496020/?of=y2",
         "time": "09:00～12:00"
+      },
+      {
+        "girlId": "66765039",
+        "venryGirlId": "3635888",
+        "name": "瑠々/るる",
+        "normalizedName": "瑠々/るる",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66765039/?of=y2",
+        "time": "09:00～13:00"
       },
       {
         "girlId": "54396484",
@@ -317,6 +317,14 @@
         "normalizedName": "心/こころ",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-62722457/?of=y2",
         "time": "12:00～20:00"
+      },
+      {
+        "girlId": "4465057",
+        "venryGirlId": "4465057",
+        "name": "クロエ・天然iカップ",
+        "normalizedName": "クロエ・天然iカップ",
+        "profileUrl": "",
+        "time": "14:00～02:00"
       },
       {
         "girlId": "54396484",
