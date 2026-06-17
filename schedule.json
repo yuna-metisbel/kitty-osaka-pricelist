@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-06-17T17:13:57.102Z",
+  "syncedAt": "2026-06-17T20:26:21.310Z",
   "dates": [
     {
       "date": "2026-06-18",
@@ -755,6 +755,14 @@
         "time": "21:00～03:00"
       },
       {
+        "girlId": "57246617",
+        "venryGirlId": "3562289",
+        "name": "初恋/はつこい・最高峰の美女",
+        "normalizedName": "初恋/はつこい",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-57246617/?of=y2",
+        "time": "21:00～03:00"
+      },
+      {
         "girlId": "62784338",
         "venryGirlId": "4114555",
         "name": "心花/ときめき・看板候補",
@@ -835,6 +843,14 @@
         "normalizedName": "王妃瑠璃/おうひるり",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-59909114/?of=y2",
         "time": "19:00～01:00"
+      },
+      {
+        "girlId": "57246617",
+        "venryGirlId": "3562289",
+        "name": "初恋/はつこい・最高峰の美女",
+        "normalizedName": "初恋/はつこい",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-57246617/?of=y2",
+        "time": "19:00～03:00"
       },
       {
         "girlId": "66049971",
