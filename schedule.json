@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-06-17T22:49:20.212Z",
+  "syncedAt": "2026-06-18T00:22:38.791Z",
   "dates": [
     {
       "date": "2026-06-18",
@@ -77,14 +77,6 @@
         "time": "12:00～20:00"
       },
       {
-        "girlId": "54396484",
-        "venryGirlId": "3263347",
-        "name": "天使らな・動画無料",
-        "normalizedName": "天使らな",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-54396484/?of=y2",
-        "time": "14:00～02:00"
-      },
-      {
         "girlId": "4098447",
         "venryGirlId": "4098447",
         "name": "黒咲 もあ・オススメ嬢",
@@ -123,6 +115,22 @@
         "normalizedName": "一番星/イチバンボシ",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-65477060/?of=y2",
         "time": "16:00～05:00"
+      },
+      {
+        "girlId": "59607132",
+        "venryGirlId": "2628620",
+        "name": "歌唄/うたう",
+        "normalizedName": "歌唄/うたう",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-59607132/?of=y2",
+        "time": "17:00～00:00"
+      },
+      {
+        "girlId": "54396484",
+        "venryGirlId": "3263347",
+        "name": "天使らな・動画無料",
+        "normalizedName": "天使らな",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-54396484/?of=y2",
+        "time": "17:00～02:00"
       },
       {
         "girlId": "65989250",
