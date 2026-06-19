@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-06-19T17:24:05.779Z",
+  "syncedAt": "2026-06-19T19:58:52.701Z",
   "dates": [
     {
       "date": "2026-06-20",
@@ -51,6 +51,14 @@
         "normalizedName": "白百合",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66031798/?of=y2",
         "time": "09:00～14:00"
+      },
+      {
+        "girlId": "64983904",
+        "venryGirlId": "4470339",
+        "name": "きらめき・JK",
+        "normalizedName": "きらめき",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-64983904/?of=y2",
+        "time": "09:00～18:00"
       },
       {
         "girlId": "64532141",
@@ -423,6 +431,14 @@
         "time": "15:00～21:00"
       },
       {
+        "girlId": "64983904",
+        "venryGirlId": "4470339",
+        "name": "きらめき・JK",
+        "normalizedName": "きらめき",
+        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-64983904/?of=y2",
+        "time": "17:00～02:00"
+      },
+      {
         "girlId": "4460885",
         "venryGirlId": "4460885",
         "name": "天女/あまめ",
@@ -468,14 +484,6 @@
         "name": "きゅん・全身性感帯",
         "normalizedName": "きゅん",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-63390779/?of=y2",
-        "time": "22:00～05:00"
-      },
-      {
-        "girlId": "66725004",
-        "venryGirlId": "4445151",
-        "name": "莉央/りお",
-        "normalizedName": "莉央/りお",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66725004/?of=y2",
         "time": "22:00～05:00"
       },
       {
