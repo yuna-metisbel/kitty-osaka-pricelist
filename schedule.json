@@ -3,7 +3,7 @@
   "sourcePages": [
     "https://webapi2.mrvenrey.jp/api/schedules/1day"
   ],
-  "syncedAt": "2026-06-21T21:23:02.109Z",
+  "syncedAt": "2026-06-21T23:24:26.101Z",
   "dates": [
     {
       "date": "2026-06-22",
@@ -77,14 +77,6 @@
         "time": "10:30～16:00"
       },
       {
-        "girlId": "4465057",
-        "venryGirlId": "4465057",
-        "name": "クロエ・天然iカップ",
-        "normalizedName": "クロエ・天然iカップ",
-        "profileUrl": "",
-        "time": "12:00～00:00"
-      },
-      {
         "girlId": "54396484",
         "venryGirlId": "3263347",
         "name": "天使らな・動画無料",
@@ -107,6 +99,14 @@
         "normalizedName": "琴葉/ことは",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-64642364/?of=y2",
         "time": "15:00～03:00"
+      },
+      {
+        "girlId": "4465057",
+        "venryGirlId": "4465057",
+        "name": "クロエ・天然iカップ",
+        "normalizedName": "クロエ・天然iカップ",
+        "profileUrl": "",
+        "time": "17:00～03:00"
       },
       {
         "girlId": "57868423",
@@ -333,14 +333,6 @@
         "normalizedName": "雅/みやび",
         "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-62570305/?of=y2",
         "time": "18:00～20:00"
-      },
-      {
-        "girlId": "66369740",
-        "venryGirlId": "2940570",
-        "name": "環奈/かんな・極嬢",
-        "normalizedName": "環奈/かんな",
-        "profileUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-66369740/?of=y2",
-        "time": "20:00～04:00"
       },
       {
         "girlId": "4466679",
